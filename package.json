@@ -1,0 +1,38 @@
+{
+  "name": "react-accounting",
+  "version": "1.0.0",
+  "description": "accounting",
+  "main": "index.jsx",
+  "scripts": {
+    "build": "./node_modules/webpack/bin/webpack.js -d",
+    "server": "sudo supervisor server.js"
+  },
+  "keywords": [
+    "react.js",
+    "accounting"
+  ],
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "express": "^4.13.4",
+    "mysql": "^2.10.2",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-highcharts": "^8.3.2",
+    "redux": "^3.5.2",
+    "spectre.css": "^0.1.23",
+    "superagent": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.9.2"
+  }
+  "author": "ThomasChan"
+}
