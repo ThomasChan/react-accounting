@@ -69,7 +69,7 @@ export default class Dialog extends Component {
 							</div>
 							<div className="form-group">
 								<label className="form-label" for="input-example-3">Amount</label>
-								<input className="form-input" name="amount" type="number" id="input-example-3" onChange={this._updateModal.bind(this)} placeholder={this.state.amount} value={this.state.amount} />
+								<input className="form-input" name="amount" type="text" id="input-example-3" onChange={this._updateModal.bind(this)} placeholder={this.state.amount} value={this.state.amount} />
 							</div>
 							<div className="form-group">
 								<label className="form-label" for="input-example-4">Description</label>

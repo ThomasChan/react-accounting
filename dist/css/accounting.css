@@ -1,0 +1,40 @@
+.load-data-loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.1);
+}
+.load-data-loading .loading{
+	position: absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+.modal-temp{
+	position: absolute;
+	right:1rem;
+	top:5rem;
+	z-index:999;
+}
+.btn-submit{
+	color:#61dafb;
+	border-color:#61dafb;
+}
+.btn-submit:hover{
+	border-color:#61dafb;
+	background: #61dafb;
+	color:#fff;
+}
+.btn-delete{
+	color:red;
+	border-color:red;
+}
+.btn-delete:hover{
+	border-color:red;
+	background: red;
+	color:#fff;
+}
+.detail-update-btn{visibility: hidden}
+.detail-li:hover .detail-update-btn{visibility: visible;}

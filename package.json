@@ -19,6 +19,7 @@
     "react-dom": "^15.1.0",
     "react-highcharts": "^8.3.2",
     "redux": "^3.5.2",
+    "simple-node-logger": "^0.93.12",
     "spectre.css": "^0.1.23",
     "superagent": "^2.0.0"
   },
@@ -33,6 +34,6 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "babel-runtime": "^6.9.2"
-  }
+  },
   "author": "ThomasChan"
 }

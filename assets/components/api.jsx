@@ -12,5 +12,27 @@ export const Api = {
 			'amount': '',
 			'description': ''
 		}
+	},
+	'UpdateLog': {
+		'url': '/api/UpdateLog',
+		'params': {
+			'id': '',
+			'year': '',
+			'month': '',
+			'type': '',
+			'amount': '',
+			'description': ''
+		}
+	},
+	'DeleteLog': {
+		'url': '/api/DeleteLog',
+		'params': {
+			'id': '',
+			'year': '',
+			'month': '',
+			'type': '',
+			'amount': '',
+			'description': ''
+		}
 	}
 }

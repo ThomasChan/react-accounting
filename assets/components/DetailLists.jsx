@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Request from 'superagent'
-import classnames from 'classnames'
+
+import DetailLi from './DetailLi.jsx'
 
 const _overflow_style = {
 	position: 'absolute',
@@ -28,16 +28,7 @@ export default class DetailLists extends Component {
 					<h4>{month}</h4>
 					<ul>
 						{monthData.map((row, k) => {
-							let classNames = classnames({
-								'inline-block': true,
-								'label': true,
-								'label-primary': row.type == 1
-							})
-							return <li key={k}>
-								<span className={classNames}>{row.type == 1 ? '收入' : '支出'}</span>
-								<span style={{marginLeft:'10px',width:'100px'}} className="text-bold inline-block">{row.amount}</span>
-								<span style={{marginLeft:'10px'}} className="inline-block">{row.description}</span>
-							</li>
+							return <DetailLi data={row} />
 						})}
 					</ul>
 				</li>

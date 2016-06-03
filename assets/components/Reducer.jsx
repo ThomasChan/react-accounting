@@ -1,33 +1,62 @@
 import { createStore } from 'redux'
-
 import Request from 'superagent'
+
 import { Api } from './api.jsx'
 import { getAllDatas } from './Actions.jsx'
 
-const AccountingData = (state, action) => {
+const getData = async (action, url) => {
+	let ret = {body:[]}
+	try {
+		ret = await Request.get(url)
+		if (ret.status !== 200) alert(ret.body.error)
+	} catch (Exception) {
+		console.warn(Exception)
+	}
+	Store.dispatch(getAllDatas('Done', ret.body))
+	return ret
+}
+
+const sendData = async (action, url) => {
+	console.info(action.payload)
+	let ret = {body:[]}
+	try {
+		ret = await Request.post(url).send(action.payload)
+		if (ret.status !== 200) alert(ret.body.error)
+	} catch (Exception) {
+		console.warn(Exception)
+	}
+	Store.dispatch(getAllDatas('Pending'))
+	return ret
+}
+
+const initData = {
+	Pending: false,
+	data: []
+}
+
+const AccountingData = (state = initData, action) => {
 	switch(action.type) {
 		case 'GET_ALL_DATA':
 			switch (action.status) {
 				case 'Pending':
-					const getData = async () => {
-						const ret = await Request.get(Api.GetHomeData.url)
-						Store.dispatch(getAllDatas('Done', ret.body))
-					}
-					getData()
-					return {
-						Pending: true
-					}
+					getData(action, Api.GetHomeData.url)
+					return Object.assign({}, state, {Pending: true})
 				case 'Done':
-					return Object.assign({}, action.payload, {Pending: false})
+					return Object.assign({}, {data:action.payload}, {Pending: false})
 			}
-			break;
+			break
 		case 'ADD_ACOUNTING':
-			const sendData = async () => {
-				console.log(action.payload)
-				const ret = await Request.post(Api.AddLog.url).send(action.payload)
-				Store.dispatch(getAllDatas('Pending'))
-			}
-			sendData()
+			sendData(action, Api.AddLog.url)
+			return state
+			break
+		case 'UPDATE_ACCOUNTING':
+			sendData(action, Api.UpdateLog.url)
+			return state
+			break
+		case 'DELETE_ACCOUNTING':
+			sendData(action, Api.DeleteLog.url)
+			return state
+			break
 		default:
 			return state
 	}

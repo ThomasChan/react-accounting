@@ -3,5 +3,5 @@ module.exports = {
 	user: 'root',
 	pwd: '',
 	db: 'money',
-	table: 'accounting_log'
+	table: 'accounting_log_test'
 }

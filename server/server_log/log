@@ -1,0 +1,121 @@
+2016-06-03 11:31:54 INFO  REQ: /api/GetHomeData 
+2016-06-03 11:31:54 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:31:54 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:37:45 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:37:45 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:37:45 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:39:56 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:39:56 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:39:56 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:41:03 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:41:03 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:41:03 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:45:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:45:15 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:45:15 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:47:32 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:47:32 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:47:32 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:47:48 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 11:47:48 INFO  update accounting_log_test set type=2 ,amount=522 ,description=车费报销 where id=150 
+2016-06-03 11:49:29 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:49:29 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:49:29 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:50:52 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 11:50:52 INFO  update accounting_log_test set type=2 ,amount=522 ,description="车费报销" where id=150 
+2016-06-03 11:50:52 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:50:52 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:50:52 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:51:11 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 11:51:11 INFO  update accounting_log_test set type=1 ,amount=525 ,description="车费报销" where id=150 
+2016-06-03 11:51:11 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:51:11 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:51:11 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:51:41 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 11:51:41 INFO  delete from accounting_log_test where id= 
+2016-06-03 11:58:59 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:58:59 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:58:59 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 11:59:18 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 11:59:18 INFO  update accounting_log_test set type=2 ,amount=525 ,description="车费报销" where id=150 
+2016-06-03 11:59:18 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 11:59:18 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 11:59:18 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:02:24 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 12:02:24 INFO  delete from accounting_log_test where id=150 
+2016-06-03 12:02:24 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:02:24 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:02:24 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:03:18 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:03:18 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:03:18 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:10:12 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:10:12 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:10:12 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:10:35 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 12:10:35 INFO  update accounting_log_test set type=2 ,amount=10000 ,description="房租" where id=105 
+2016-06-03 12:10:35 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:10:35 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:10:35 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:14:02 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:14:02 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:14:02 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:14:06 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 12:14:06 INFO  delete from accounting_log_test where id=149 
+2016-06-03 12:20:45 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 12:20:45 INFO  select date_year,date,type,sum(amount) as a,description from accounting_log_test  group by date_year,date,type order by date_year asc, date asc, id asc 
+2016-06-03 12:20:45 INFO  select * from accounting_log_test order by date_year asc,date asc,id asc 
+2016-06-03 12:20:52 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 12:20:52 INFO  update accounting_log_test set type=2 ,amount=7.46 ,description="" where id=147 
+2016-06-03 13:29:04 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:29:04 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:30:54 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:30:54 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:32:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:32:15 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:37:35 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:37:35 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:39:18 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:39:18 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:41:33 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:41:33 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:41:50 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 13:41:50 INFO  update accounting_log_test set type=2 ,amount=14.76 ,description="" where id=148 
+2016-06-03 13:41:51 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:41:51 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:44:51 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:44:51 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:45:05 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 13:45:05 INFO  update accounting_log_test set type=2 ,amount=7.46 ,description="早餐" where id=147 
+2016-06-03 13:45:06 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:45:06 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:45:23 INFO  REQUEST: /api/AddLog 
+2016-06-03 13:45:23 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,11110,"吃饭") 
+2016-06-03 13:45:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:45:23 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:46:12 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 13:46:12 INFO  update accounting_log_test set type=2 ,amount=14.76 ,description="打车" where id=148 
+2016-06-03 13:46:13 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:46:13 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:46:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:46:23 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:46:27 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:46:27 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:46:39 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:46:39 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:48:02 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:48:02 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:51:26 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:51:26 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 13:56:22 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 13:56:22 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:00:24 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:00:24 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:02:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:02:15 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:05:13 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:05:13 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:14:08 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:14:08 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:16:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:16:15 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 

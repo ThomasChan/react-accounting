@@ -30,8 +30,8 @@ module.exports = {
                 booleans: true,
                 unused: true,
                 if_return: true,
-                join_vars: true,
-                drop_console: true
+                join_vars: true
+                ,drop_console: true
             },
             sourceMap: false,
             // mangle: false,

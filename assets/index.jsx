@@ -17,38 +17,109 @@ class App extends Component {
 
 	constructor(props) {
 		super(props)
-		this.state = Store.getState()
+		let initData = Store.getState()
+		let newState = this.parseAllData(initData.data)
+		newState.Pending = initData.Pending
+		console.info(newState)
+		this.state = newState
 	}
 
 	componentDidMount() {
 		Store.subscribe(() => {
-			this.setState(Store.getState())
+			let initData = Store.getState()
+			let newState = this.parseAllData(initData.data)
+			newState.Pending = initData.Pending
+			console.info(newState)
+			this.setState(newState)
 		})
 	}
 
 	render() {
 		return <div>
 			<Header />
-			{this.state.Pending ? 
-				<div className="loading"></div>
-			:
-				<div className="container">
-					<div className="columns">
-						<div className="column col-7">
-							<h3>收支趋势</h3>
-							<ChartsDatas data={this.state.chartsData} />
-						</div>
-						<div className="column col-5">
-							<h3>汇总</h3>
-							<Summary data={this.state.sum} />
-							<h3>明细</h3>
-							<DetailLists data={this.state.detailsData} />
-						</div>
+			{this.state.Pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
+			<div className="container">
+				<div className="columns">
+					<div className="column col-7">
+						<h3>收支趋势</h3>
+						<ChartsDatas data={this.state.chartsData} />
+					</div>
+					<div className="column col-5">
+						<h3>汇总</h3>
+						<Summary data={this.state.sum} />
+						<h3>明细</h3>
+						<DetailLists data={this.state.detailsData} />
 					</div>
 				</div>
-			}
+			</div>
 		</div>
 		
+	}
+
+	parseAllData(data) {
+		var chartsData = this.parseChartsData(data)
+		var resData = {
+			"sum": {
+				"shouru": chartsData.shouru.length && chartsData.shouru.reduce((p, c, i, o) => {
+					if (isNaN(Number(c))) {
+						c = 0
+					}
+					return p + c
+				}, 0) || 0,
+				"zhichu": chartsData.zhichu.length && chartsData.zhichu.reduce((p, c, i, o) => {
+					if (isNaN(Number(c))) {
+						c = 0
+					}
+					return p + c
+				}, 0) || 0,
+				"ave": 0,
+				"rem": 0
+			},
+			"chartsData": chartsData,
+			"detailsData": {}
+		}
+		resData.sum.ave = chartsData.zhichu.length && (resData.sum.zhichu / chartsData.zhichu.length) || 0
+		resData.sum.rem = resData.sum.shouru - resData.sum.zhichu
+		data = data.reverse()
+		data.length && data.forEach((row, index) => {
+			var _date = row.date_year + '-' + row.date
+			if (!resData.detailsData[_date]) {
+				resData.detailsData[_date] = []
+			}
+			resData.detailsData[_date].push(row)
+		})
+		return resData
+	}
+
+	parseChartsData(data) {
+		var tmpData = {}
+		var chartsData = {
+			"month": [],
+			"shouru": [],
+			"zhichu": []
+		}
+		data.length && data.forEach((row, index) => {
+			var _month = row.date_year + '-' + row.date
+			tmpData[_month] = tmpData[_month] || {}
+			if (row.type == 1) {
+				tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
+			}
+			if (row.type == 2) {
+				tmpData[_month].zhichu = (tmpData[_month].zhichu || 0) + Number(row.amount)
+			}
+		})
+		Object.keys(tmpData).length && Object.keys(tmpData).map((key) => {
+			if ('undefined' == tmpData[key].shouru) {
+				tmpData[key].shouru = 0
+			}
+			if ('undefined' == tmpData[key].zhichu) {
+				tmpData[key].zhichu = 0
+			}
+			chartsData.month.push(key)
+			chartsData.shouru.push(tmpData[key].shouru)
+			chartsData.zhichu.push(tmpData[key].zhichu)
+		})
+		return chartsData
 	}
 
 }
