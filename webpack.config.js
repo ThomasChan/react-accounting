@@ -1,6 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
+	devtool: 'inline-eval-cheap-source-map',
 	entry: './assets/index.jsx',
 	output: {
 		path: './dist/js/',

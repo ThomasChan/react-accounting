@@ -15,7 +15,7 @@ app.use(routerLogger)
 
 app.get('/api/GetHomeData', function(req, res) {
 	// var sql = "select date_year,date,type,sum(amount) as a,description from " + db_config.table + "  group by date_year,date,type order by date_year asc, date asc, id asc"
-	var sql = 'select * from ' + db_config.table + ' order by date_year asc, date asc, id asc'
+	var sql = 'select * from ' + db_config.table + ' order by date_year asc, date asc, type asc'
 	log.info(sql)
 	query(sql, function(err, data) {
 		if (err) {

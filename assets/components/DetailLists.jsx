@@ -13,18 +13,13 @@ export default class DetailLists extends Component {
 
 	constructor(props) {
 		super(props)
-		this.state = props.data
-	}
-
-	componentWillReceiveProps(nextProps) {
-		this.setState(nextProps.data)
 	}
 
 	render() {
-		return <div style={_overflow_style}><ul>
-			{Object.keys(this.state).map((month, i) => {
-				let monthData = this.state[month]
-				return <li key={i}>
+		return <div style={_overflow_style}><pre>
+			{Object.keys(this.props.data).map((month) => {
+				let monthData = this.props.data[month]
+				return <li key={month}>
 					<h4>{month}</h4>
 					<ul>
 						{monthData.map((row, k) => {
@@ -33,7 +28,7 @@ export default class DetailLists extends Component {
 					</ul>
 				</li>
 			})}
-		</ul></div>
+		</pre></div>
 	}
 
 }

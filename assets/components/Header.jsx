@@ -6,12 +6,16 @@ export default class Header extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
+			Pending: this.props.Pending,
 			openModal: false
 		}
 	}
 
 	_openModal(_status) {
-		this.setState({openModal: !this.state.openModal})
+		this.setState({
+			Pending: this.state.Pending,
+			openModal: !this.state.openModal
+		})
 	}
 
 	render() {
@@ -22,7 +26,7 @@ export default class Header extends Component {
 			<section className="navbar-section">
 				<a className="btn" onClick={this._openModal.bind(this)}>记一笔</a>
 			</section>
-			<Dialog openModal={this.state.openModal} />
+			<Dialog data={this.state} />
 		</header>
 	}
 	

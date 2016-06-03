@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classnames from 'classnames'
 
 import { addAccounting } from './Actions.jsx'
 import Store from './Reducer.jsx'
@@ -8,7 +9,8 @@ export default class Dialog extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			openModal: this.props.openModal,
+			Pending: this.props.data.Pending,
+			openModal: this.props.data.openModal,
 			year: new Date().getFullYear(),
 			month: new Date().getMonth() + 1,
 			type: 1,
@@ -19,12 +21,15 @@ export default class Dialog extends Component {
 
 	componentWillReceiveProps(nextProps) {
 		let newState = this.state
-		newState.openModal = nextProps.openModal
+		newState.Pending = nextProps.data.Pending
+		newState.openModal = nextProps.data.openModal
 		this.setState(newState)
 	}
 
 	_openModal(_status) {
-		this.setState({openModal: _status})
+		let newState = this.state
+		newState.openModal = _status
+		this.setState(newState)
 	}
 
 	_updateModal(e) {
@@ -38,11 +43,15 @@ export default class Dialog extends Component {
 	}
 
 	render() {
+		let submitClass = classnames({
+			"btn":true,
+			"btn-primary":true,
+			"loading": this.state.Pending
+		})
 		return <div className="modal-temp" style={this.state.openModal ? {display:'block'} : {display:'none'}}>
 			<div className="modal-overlay"></div>
 			<div className="modal-container">
 				<div className="modal-header">
-					<button type="button" className="btn btn-clear float-right" aria-label="Close" onClick={this._openModal.bind(this, false)}></button>
 					<div className="modal-title">记一笔</div>
 				</div>
 				<div className="modal-body">
@@ -79,8 +88,7 @@ export default class Dialog extends Component {
 					</div>
 				</div>
 				<div className="modal-footer">
-					<button className="btn btn-link" onClick={this._openModal.bind(this, false)}>Close</button>
-					<button className="btn btn-primary" onClick={this._submitModal.bind(this)}>Submit</button>
+					<button className={submitClass} onClick={this._submitModal.bind(this)}>Submit</button>
 				</div>
 			</div>
 		</div>

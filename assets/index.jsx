@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Request from 'superagent'
+import { orderBy } from 'lodash'
 
 import { getAllDatas } from './components/Actions.jsx'
 import Store from './components/Reducer.jsx'
@@ -20,23 +21,24 @@ class App extends Component {
 		let initData = Store.getState()
 		let newState = this.parseAllData(initData.data)
 		newState.Pending = initData.Pending
-		console.info(newState)
+		newState.addPending = initData.addPending
 		this.state = newState
 	}
 
 	componentDidMount() {
 		Store.subscribe(() => {
 			let initData = Store.getState()
+			console.log(initData)
 			let newState = this.parseAllData(initData.data)
 			newState.Pending = initData.Pending
-			console.info(newState)
+			newState.addPending = initData.addPending
 			this.setState(newState)
 		})
 	}
 
 	render() {
 		return <div>
-			<Header />
+			<Header Pending={this.state.addPending} />
 			{this.state.Pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
 			<div className="container">
 				<div className="columns">
@@ -57,9 +59,9 @@ class App extends Component {
 	}
 
 	parseAllData(_data) {
-		let data = JSON.parse(JSON.stringify(_data))
-		var chartsData = this.parseChartsData(data)
-		var resData = {
+		let data = orderBy(JSON.parse(JSON.stringify(_data)), ['date_year', 'asc'], ['date', 'asc'], ['type', 'asc'])
+		let chartsData = this.parseChartsData(data)
+		let resData = {
 			"sum": {
 				"shouru": chartsData.shouru.length && chartsData.shouru.reduce((p, c, i, o) => {
 					if (isNaN(Number(c))) {
@@ -85,7 +87,7 @@ class App extends Component {
 		data.length && data.forEach((row, index) => {
 			if (row) {
 				row.key = index
-				var _date = row.date_year + '-' + row.date
+				let _date = row.date_year + '-' + row.date
 				if (!resData.detailsData[_date]) {
 					resData.detailsData[_date] = []
 				}
@@ -96,15 +98,15 @@ class App extends Component {
 	}
 
 	parseChartsData(data) {
-		var tmpData = {}
-		var chartsData = {
+		let tmpData = {}
+		let chartsData = {
 			"month": [],
 			"shouru": [],
 			"zhichu": []
 		}
 		data.length && data.forEach((row, index) => {
 			if (row) {
-				var _month = row.date_year + '-' + row.date
+				let _month = row.date_year + '-' + row.date
 				tmpData[_month] = tmpData[_month] || {}
 				if (row.type == 1) {
 					tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
