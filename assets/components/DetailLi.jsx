@@ -19,7 +19,6 @@ export default class DetailLi extends Component {
 
 	updateField(type, e) {
 		let newState = this.state
-		console.log(type, e)
 		if (type == 'update') {
 			newState['update_status'] = !newState['update_status']
 			this.setState(newState)

@@ -34,7 +34,7 @@ export default class Dialog extends Component {
 	}
 
 	_submitModal() {
-		Store.dispatch(addAccounting(this.state))
+		Store.dispatch(addAccounting('Pending', this.state))
 	}
 
 	render() {

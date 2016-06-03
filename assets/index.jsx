@@ -56,7 +56,8 @@ class App extends Component {
 		
 	}
 
-	parseAllData(data) {
+	parseAllData(_data) {
+		let data = JSON.parse(JSON.stringify(_data))
 		var chartsData = this.parseChartsData(data)
 		var resData = {
 			"sum": {
@@ -82,11 +83,14 @@ class App extends Component {
 		resData.sum.rem = resData.sum.shouru - resData.sum.zhichu
 		data = data.reverse()
 		data.length && data.forEach((row, index) => {
-			var _date = row.date_year + '-' + row.date
-			if (!resData.detailsData[_date]) {
-				resData.detailsData[_date] = []
+			if (row) {
+				row.key = index
+				var _date = row.date_year + '-' + row.date
+				if (!resData.detailsData[_date]) {
+					resData.detailsData[_date] = []
+				}
+				resData.detailsData[_date].push(row)
 			}
-			resData.detailsData[_date].push(row)
 		})
 		return resData
 	}
@@ -99,13 +103,15 @@ class App extends Component {
 			"zhichu": []
 		}
 		data.length && data.forEach((row, index) => {
-			var _month = row.date_year + '-' + row.date
-			tmpData[_month] = tmpData[_month] || {}
-			if (row.type == 1) {
-				tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
-			}
-			if (row.type == 2) {
-				tmpData[_month].zhichu = (tmpData[_month].zhichu || 0) + Number(row.amount)
+			if (row) {
+				var _month = row.date_year + '-' + row.date
+				tmpData[_month] = tmpData[_month] || {}
+				if (row.type == 1) {
+					tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
+				}
+				if (row.type == 2) {
+					tmpData[_month].zhichu = (tmpData[_month].zhichu || 0) + Number(row.amount)
+				}
 			}
 		})
 		Object.keys(tmpData).length && Object.keys(tmpData).map((key) => {

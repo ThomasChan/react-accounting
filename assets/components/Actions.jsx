@@ -11,9 +11,10 @@ export const getAllDatas = (status, payload) => {
 	}
 }
 
-export const addAccounting = (data) => {
+export const addAccounting = (status, data) => {
 	return {
 		type: 'ADD_ACOUNTING',
+		status: status,
 		payload: data
 	}
 }

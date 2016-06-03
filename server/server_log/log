@@ -145,3 +145,107 @@
 2016-06-03 15:08:42 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
 2016-06-03 15:10:28 INFO  REQUEST: /api/GetHomeData 
 2016-06-03 15:10:28 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:12:53 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:12:53 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:13:01 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:13:01 INFO  delete from accounting_log_test where id=151 
+2016-06-03 15:13:02 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:13:02 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:13:17 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:13:17 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:13:45 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:13:45 INFO  update accounting_log_test set type=2 ,amount=1111114.76 ,description="打车" where id=148 
+2016-06-03 15:13:46 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:13:46 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:14:03 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:14:03 INFO  delete from accounting_log_test where id=148 
+2016-06-03 15:14:03 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:14:03 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:16:09 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:16:09 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:16:28 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:16:28 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:17:33 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:17:33 INFO  insert into accounting_log (date_year, date, type, amount, description) values("2016",6,2,16.8,"午餐") 
+2016-06-03 15:17:33 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:17:33 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:21:01 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:21:01 INFO  update accounting_log set type=2 ,amount=681 ,description="火车票" where id=97 
+2016-06-03 15:21:01 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:21:01 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:21:08 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:21:08 INFO  update accounting_log set type=2 ,amount=432 ,description="火车票" where id=96 
+2016-06-03 15:21:09 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:21:09 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:21:44 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:21:44 INFO  update accounting_log set type=2 ,amount=17 ,description="晚餐" where id=93 
+2016-06-03 15:21:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:21:44 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:21:54 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:21:54 INFO  update accounting_log set type=2 ,amount=15 ,description="晚餐" where id=99 
+2016-06-03 15:21:54 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:21:54 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:22:30 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 15:22:30 INFO  update accounting_log set type=2 ,amount=8.3 ,description="早餐" where id=116 
+2016-06-03 15:22:30 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:22:30 INFO  select * from accounting_log order by date_year asc, date asc, id asc 
+2016-06-03 15:29:08 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:29:08 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:29:23 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:29:23 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,525,"打车") 
+2016-06-03 15:29:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:29:23 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:38:04 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:38:04 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:38:20 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:38:20 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,2,10,"吃饭") 
+2016-06-03 15:38:53 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:38:53 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,100000,"吃饭") 
+2016-06-03 15:41:46 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:41:46 INFO  delete from accounting_log_test where id= 
+2016-06-03 15:41:50 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:41:50 INFO  delete from accounting_log_test where id= 
+2016-06-03 15:42:55 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:42:55 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:43:04 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:43:04 INFO  delete from accounting_log_test where id=154 
+2016-06-03 15:43:17 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:43:17 INFO  delete from accounting_log_test where id=153 
+2016-06-03 15:43:26 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:43:26 INFO  delete from accounting_log_test where id=153 
+2016-06-03 15:43:30 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:43:30 INFO  delete from accounting_log_test where id=153 
+2016-06-03 15:49:16 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:49:16 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:50:09 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:50:09 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:50:39 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:50:39 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,110,"吃饭") 
+2016-06-03 15:50:44 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:50:44 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,1101,"吃饭") 
+2016-06-03 15:50:47 INFO  REQUEST: /api/AddLog 
+2016-06-03 15:50:47 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,11101,"吃饭") 
+2016-06-03 15:51:07 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:51:07 INFO  delete from accounting_log_test where id=152 
+2016-06-03 15:52:31 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:52:31 INFO  delete from accounting_log_test where id=152 
+2016-06-03 15:58:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:58:23 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:58:28 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 15:58:28 INFO  delete from accounting_log_test where id=157 
+2016-06-03 15:59:46 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:59:46 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 16:00:01 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:00:01 INFO  delete from accounting_log_test where id=156 
+2016-06-03 16:01:21 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 16:01:21 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 16:01:28 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:01:29 INFO  delete from accounting_log_test where id=147 
+2016-06-03 16:01:32 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:01:32 INFO  delete from accounting_log_test where id=146 
+2016-06-03 16:01:35 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:01:35 INFO  delete from accounting_log_test where id=145 
+2016-06-03 16:01:40 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:01:40 INFO  delete from accounting_log_test where id=143 
+2016-06-03 16:01:48 INFO  REQUEST: /api/DeleteLog 
+2016-06-03 16:01:48 INFO  delete from accounting_log_test where id=142 
