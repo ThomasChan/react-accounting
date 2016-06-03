@@ -119,3 +119,29 @@
 2016-06-03 14:14:08 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
 2016-06-03 14:16:15 INFO  REQUEST: /api/GetHomeData 
 2016-06-03 14:16:15 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:22:05 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:22:05 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:29:08 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:29:08 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:31:02 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:31:02 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:44:46 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:44:46 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:44:49 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:44:49 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:44:53 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:44:53 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:47:01 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:47:01 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:48:21 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:48:21 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:48:41 INFO  REQUEST: /api/UpdateLog 
+2016-06-03 14:48:41 INFO  update accounting_log_test set type=1 ,amount=11110 ,description="吃饭" where id=151 
+2016-06-03 14:48:41 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:48:41 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 14:50:43 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 14:50:43 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:08:42 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:08:42 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 
+2016-06-03 15:10:28 INFO  REQUEST: /api/GetHomeData 
+2016-06-03 15:10:28 INFO  select * from accounting_log_test order by date_year asc, date asc, id asc 

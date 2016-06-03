@@ -5,28 +5,13 @@ import { Api } from './api.jsx'
 import { getAllDatas } from './Actions.jsx'
 
 const getData = async (action, url) => {
-	let ret = {body:[]}
-	try {
-		ret = await Request.get(url)
-		if (ret.status !== 200) alert(ret.body.error)
-	} catch (Exception) {
-		console.warn(Exception)
-	}
+	let ret = await Request.get(url)
 	Store.dispatch(getAllDatas('Done', ret.body))
-	return ret
 }
 
 const sendData = async (action, url) => {
-	console.info(action.payload)
-	let ret = {body:[]}
-	try {
-		ret = await Request.post(url).send(action.payload)
-		if (ret.status !== 200) alert(ret.body.error)
-	} catch (Exception) {
-		console.warn(Exception)
-	}
+	await Request.post(url).send(action.payload)
 	Store.dispatch(getAllDatas('Pending'))
-	return ret
 }
 
 const initData = {

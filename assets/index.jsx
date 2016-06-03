@@ -109,15 +109,15 @@ class App extends Component {
 			}
 		})
 		Object.keys(tmpData).length && Object.keys(tmpData).map((key) => {
-			if ('undefined' == tmpData[key].shouru) {
+			if (!tmpData[key].shouru) {
 				tmpData[key].shouru = 0
 			}
-			if ('undefined' == tmpData[key].zhichu) {
+			if (!tmpData[key].zhichu) {
 				tmpData[key].zhichu = 0
 			}
 			chartsData.month.push(key)
-			chartsData.shouru.push(tmpData[key].shouru)
-			chartsData.zhichu.push(tmpData[key].zhichu)
+			chartsData.shouru.push(Number(tmpData[key].shouru.toFixed(2)))
+			chartsData.zhichu.push(Number(tmpData[key].zhichu.toFixed(2)))
 		})
 		return chartsData
 	}
