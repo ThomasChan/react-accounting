@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-const _style = {fontSize:'18px'}
+const _style = {fontSize:'22px'}
 
 export default class Summary extends Component {
 

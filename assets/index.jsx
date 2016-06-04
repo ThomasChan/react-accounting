@@ -7,10 +7,11 @@ import { orderBy } from 'lodash'
 import { getAllDatas } from './components/Actions.jsx'
 import Store from './components/Reducer.jsx'
 
-import Header from './components/Header.jsx'
 import ChartsDatas from './components/ChartsDatas.jsx'
 import Summary from './components/Summary.jsx'
+import FormOptions from './components/FormOptions.jsx'
 import DetailLists from './components/DetailLists.jsx'
+import WifeExpense from './components/WifeExpense.jsx'
 
 Store.dispatch(getAllDatas('Pending'))
 
@@ -19,8 +20,10 @@ class App extends Component {
 	constructor(props) {
 		super(props)
 		let initData = Store.getState()
-		let newState = this.parseAllData(initData.data)
-		newState.Pending = initData.Pending
+		let newState = {}
+		newState.data = this.parseAllData(initData.data)
+		newState.wifeData = this.parseWifeData(initData.data2)
+		newState.pending = initData.pending
 		newState.addPending = initData.addPending
 		this.state = newState
 	}
@@ -29,28 +32,40 @@ class App extends Component {
 		Store.subscribe(() => {
 			let initData = Store.getState()
 			console.log(initData)
-			let newState = this.parseAllData(initData.data)
-			newState.Pending = initData.Pending
+			let newState = {}
+			newState.data = this.parseAllData(initData.data)
+			newState.wifeData = this.parseWifeData(initData.data2)
+			newState.pending = initData.pending
 			newState.addPending = initData.addPending
 			this.setState(newState)
 		})
 	}
 
 	render() {
+		let height = Math.ceil(window.innerHeight / 2)
+		this.state.data.chartsData.height = height
 		return <div>
-			<Header Pending={this.state.addPending} />
-			{this.state.Pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
+			{this.state.pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
 			<div className="container">
 				<div className="columns">
-					<div className="column col-7">
-						<h3>收支趋势</h3>
-						<ChartsDatas data={this.state.chartsData} />
+					<div className="column col-12">
+						<h6>收支趋势</h6>
+						<ChartsDatas data={this.state.data.chartsData} />
+					</div>
+				</div>
+				<div className="columns">
+					<div className="column col-3">
+						<h6>老婆的钱</h6>
+						<WifeExpense data={this.state.wifeData} />
 					</div>
 					<div className="column col-5">
-						<h3>汇总</h3>
-						<Summary data={this.state.sum} />
-						<h3>明细</h3>
-						<DetailLists data={this.state.detailsData} />
+						<h6>明细</h6>
+						<DetailLists data={this.state.data.detailsData} />
+					</div>
+					<div className="column col-4">
+						<h6>汇总</h6>
+						<Summary data={this.state.data.sum} />
+						<FormOptions pending={this.state.pending} />
 					</div>
 				</div>
 			</div>
@@ -128,6 +143,33 @@ class App extends Component {
 			chartsData.zhichu.push(Number(tmpData[key].zhichu.toFixed(2)))
 		})
 		return chartsData
+	}
+
+	parseWifeData(_data) {
+		var tableData = {}
+		if (_data.length) {
+			let data = JSON.parse(JSON.stringify(_data))
+			data = data.map((row) => {
+				row.date_time = +new Date(row.date)
+				return row
+			})
+			data = data.sort((a, b) => a.date_time - b.date_time).reverse()
+			// data = orderBy(data, ['date', 'asc'], ['amount', 'asc'])
+			console.log(data)
+			data.map((row) => {
+				var _month = row.date.split('-').map((piece) => Number(piece)).splice(0, 2).join('-')
+				if (!tableData[_month]) {
+					tableData[_month] = {
+						total: 0,
+						detail: []
+					}
+				}
+				tableData[_month].total += Number(row.amount)
+				tableData[_month].detail.push(row)
+			})
+			console.info(tableData)
+		}
+		return tableData
 	}
 
 }

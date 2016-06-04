@@ -2,13 +2,6 @@ import React, { Component } from 'react'
 
 import DetailLi from './DetailLi.jsx'
 
-const _overflow_style = {
-	position: 'absolute',
-	width: '100%',
-	height: '66%',
-	overflow: 'scroll'
-}
-
 export default class DetailLists extends Component {
 
 	constructor(props) {
@@ -16,8 +9,8 @@ export default class DetailLists extends Component {
 	}
 
 	render() {
-		return <div style={_overflow_style}><pre>
-			{Object.keys(this.props.data).map((month) => {
+		return <div><pre>
+			{Object.keys(this.props.data).length ? Object.keys(this.props.data).map((month) => {
 				let monthData = this.props.data[month]
 				return <li key={month}>
 					<h4>{month}</h4>
@@ -27,7 +20,12 @@ export default class DetailLists extends Component {
 						})}
 					</ul>
 				</li>
-			})}
+			}) :
+				<div className="empty">
+					<i className="icon icon-people"></i>
+					<p className="empty-title">There is no log found</p>
+				</div>
+			}
 		</pre></div>
 	}
 

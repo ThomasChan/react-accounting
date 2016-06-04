@@ -13,6 +13,9 @@ export const Api = {
 			'description': ''
 		}
 	},
+	'AddWifeLog': {
+		'url': '/api/wife/AddLog'
+	},
 	'UpdateLog': {
 		'url': '/api/UpdateLog',
 		'params': {

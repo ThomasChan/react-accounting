@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-import Request from 'superagent'
 import ReactHighcharts from 'react-highcharts'
-import Api from './api.jsx'
 
 export default class ChartsDatas extends Component {
 
@@ -18,7 +16,7 @@ export default class ChartsDatas extends Component {
         return {
             chart: {
                 type: 'line',
-                height: 500,
+                height: newState.height,
                 backgroundColor: 'transparent'
             },
             colors: ['#61dafb', '#F75843'],
@@ -84,8 +82,7 @@ export default class ChartsDatas extends Component {
     }
 
 	render() {
-        let config = this.state
-		return <ReactHighcharts config={config} />
+		return <ReactHighcharts config={this.state} />
 	}
 
 }
