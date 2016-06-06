@@ -42,7 +42,7 @@ export default class Dialog extends Component {
 			"btn-primary":true,
 			"loading": this.state.pending
 		})
-		return <form id="AddLogForm">
+		return <div id="AddLogForm">
 			<div className="form-group">
 				<label class="form-switch">
 					<input type="checkbox" name="isWife" onChange={this._updateModal.bind(this)} />
@@ -86,6 +86,6 @@ export default class Dialog extends Component {
 				<input className="form-input" name="description" type="text" id="input-example-4" onChange={this._updateModal.bind(this)} placeholder={this.state.description} value={this.state.description} />
 			</div>
 			<button className={submitClass} onClick={this._submitModal.bind(this)}>Submit</button>
-		</form>
+		</div>
 	}
 }

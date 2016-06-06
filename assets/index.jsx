@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Request from 'superagent'
-import { orderBy } from 'lodash'
+// import { orderBy } from 'lodash'
 
 import { getAllDatas } from './components/Actions.jsx'
 import Store from './components/Reducer.jsx'
@@ -73,8 +73,39 @@ class App extends Component {
 		
 	}
 
+	myOrderBy(prev, next) {
+		let prevDateYear = Number(prev.date_year)
+		let prevDate = Number(prev.date)
+		let prevId = Number(prev.id)
+
+		let nextDateYear = Number(next.date_year)
+		let nextDate = Number(next.date)
+		let nextId = Number(next.id)
+
+		if (prevDateYear < nextDateYear) {
+			return -1
+		}
+		if (prevDateYear > nextDateYear) {
+			return 1
+		}
+		if (prevDate < nextDate) {
+			return -1
+		}
+		if (prevDate > nextDate) {
+			return 1
+		}
+		if (prevId < nextId) {
+			return -1
+		}
+		if (prevId > nextId) {
+			return 1
+		}
+		return 0
+	}
+
 	parseAllData(_data) {
-		let data = orderBy(JSON.parse(JSON.stringify(_data)), ['date_year', 'asc'], ['date', 'asc'], ['type', 'asc'])
+		// let data = orderBy(JSON.parse(JSON.stringify(_data)), ['date_year', 'asc'], ['date', 'asc'], ['id', 'asc'])
+		let data = JSON.parse(JSON.stringify(_data)).sort(this.myOrderBy)
 		let chartsData = this.parseChartsData(data)
 		let resData = {
 			"sum": {
