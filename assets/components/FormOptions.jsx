@@ -10,7 +10,7 @@ export default class Dialog extends Component {
 		super(props)
 		this.state = {
 			pending: this.props.pending,
-			isWife: false,
+			isSpec: false,
 			year: new Date().getFullYear(),
 			month: new Date().getMonth() + 1,
 			date: new Date().getFullYear() + '-' + (new Date().getMonth() + 1),
@@ -33,7 +33,18 @@ export default class Dialog extends Component {
 	}
 
 	_submitModal() {
-		Store.dispatch(addAccounting('Pending', this.state))
+		let data = {
+			amount: this.state.amount,
+			description: this.state.description
+		}
+		if (this.state.isSpec) {
+			data.date = this.state.date
+		} else {
+			data.date_year = this.state.year
+			data.date = this.state.month
+			data.type = this.state.type
+		}
+		Store.dispatch(addAccounting('Pending', data))
 	}
 
 	render() {
@@ -45,11 +56,11 @@ export default class Dialog extends Component {
 		return <div id="AddLogForm">
 			<div className="form-group">
 				<label class="form-switch">
-					<input type="checkbox" name="isWife" onChange={this._updateModal.bind(this)} />
+					<input type="checkbox" name="isSpec" onChange={this._updateModal.bind(this)} />
 					<i class="form-icon"></i> 红包
 				</label>
 			</div>
-			{ this.state.isWife ? 
+			{ this.state.isSpec ? 
 				<div className="form-group">
 					<label className="form-label" for="input-example-1">date</label>
 					<input className="form-input" name="date" type="text" id="input-example-1" onChange={this._updateModal.bind(this)} placeholder={this.state.date} value={this.state.date} />

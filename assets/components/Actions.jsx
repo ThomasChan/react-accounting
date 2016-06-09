@@ -1,7 +1,15 @@
-require("babel-polyfill")
+import "babel-polyfill"
 import Request from 'superagent'
 
 import { Api } from './Api.jsx'
+
+export const login = (status, data) => {
+	return {
+		type: 'START_UP',
+		status: status,
+		payload: data
+	}
+}
 
 export const getAllDatas = (status, payload) => {
 	return {

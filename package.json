@@ -5,7 +5,7 @@
   "main": "index.jsx",
   "scripts": {
     "build": "./node_modules/webpack/bin/webpack.js -d",
-    "server": "sudo supervisor server.js"
+    "server": "sudo supervisor app.js"
   },
   "keywords": [
     "react.js",
@@ -13,10 +13,12 @@
   ],
   "dependencies": {
     "classnames": "^2.2.5",
+    "connect-redis": "^3.0.2",
     "express": "^4.13.4",
     "lodash": "^4.13.1",
     "mysql": "^2.10.2",
     "react": "^15.1.0",
+    "react-cookie": "^0.4.6",
     "react-dom": "^15.1.0",
     "react-highcharts": "^8.3.2",
     "redux": "^3.5.2",

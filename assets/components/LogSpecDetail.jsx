@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class WifeExpense extends Component {
+export default class LogSpecDetail extends Component {
 	
 	constructor(props) {
 		super(props)
@@ -8,9 +8,9 @@ export default class WifeExpense extends Component {
 
 	render() {
 		return <div>
-			{Object.keys(this.props.data).length ? Object.keys(this.props.data).map((key) => {
+			{Object.keys(this.props.data).length ? Object.keys(this.props.data).map((key, index) => {
 				let everyPiece = this.props.data[key]
-				return <ul style={{listStyle: 'none'}}>
+				return <ul key={index} style={{listStyle: 'none'}}>
 					<li>
 						<h6>{key}<span className='inline-block' style={{marginLeft:'20px'}}>总计：{everyPiece.total} 元</span></h6>
 					</li>
@@ -21,8 +21,8 @@ export default class WifeExpense extends Component {
 							<span className='inline-block' style={{width:'100px'}}>金额</span>
 							<span className='inline-block'>描述</span>
 						</li>
-						{everyPiece.detail.map((row) => {
-							return <li>
+						{everyPiece.detail.map((row, key) => {
+							return <li key={key}>
 								<span className='inline-block' style={{width:'100px'}}>{row.date}</span>
 								<span className='inline-block' style={{width:'100px'}}>{row.amount} 元</span>
 								<span className='inline-block'>{row.description}</span>

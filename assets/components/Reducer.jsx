@@ -1,94 +1,91 @@
 import { createStore } from 'redux'
 import Request from 'superagent'
+import Cookie from 'react-cookie'
 
 import { Api } from './Api.jsx'
-import { getAllDatas, addAccounting } from './Actions.jsx'
+import { login, getAllDatas, addAccounting } from './Actions.jsx'
 
 const getData = async (action, url) => {
 	let ret = await Request.get(url)
+	if (ret.status !== 200) {
+		Store.dispatch(login('Logout'))
+	}
 	Store.dispatch(getAllDatas('Done', ret.body))
 }
 
 const sendData = async (action, url, callback) => {
 	let ret = await Request.post(url).send(action.payload)
-	// Store.dispatch(getAllDatas('Pending'))
+	if (ret.status !== 200) {
+		Store.dispatch(login('Logout'))
+	}
 	if (callback) callback(ret.body)
 }
 
 const initData = {
+	loginStatus: Cookie.load('loginStatus', true) || false,
+	loginPending: false,
 	pending: false,
 	addPending: false,
-	data: [],
-	data2: []
+	log: [],
+	logSpec: []
 }
 
 const AccountingData = (state = initData, action) => {
+	let newState = Object.assign({}, state)
 	switch(action.type) {
+		case 'START_UP':
+			switch (action.status) {
+				case 'Pending':
+					sendData(action, Api.Login.url, (data) => {
+						Cookie.save('loginStatus', 'true', { path: '/', expires: new Date(+new Date()+120000) })
+						Store.dispatch(getAllDatas('Pending'))
+					})
+					return Object.assign({}, newState, {loginPending: true})
+				case 'Logout':
+					Cookie.remove('loginStatus')
+					return Object.assign({}, newState, {loginPending: false, loginStatus: false})
+			}
+			break
 		case 'GET_ALL_DATA':
 			switch (action.status) {
 				case 'Pending':
 					getData(action, Api.GetHomeData.url)
-					return Object.assign({}, state, {pending: true})
+					return Object.assign({}, newState, {pending: true, loginPending: false, loginStatus: true})
 				case 'Done':
-					return Object.assign({}, {
-						data: action.payload.data,
-						data2: action.payload.data2
-					}, {pending: false})
+					return Object.assign({}, newState, action.payload, {pending: false})
 			}
 			break
 		case 'ADD_ACOUNTING':
 			switch (action.status) {
 				case 'Pending':
-					let url = action.payload.isWife ? Api.AddWifeLog.url : Api.AddLog.url
+					let url = !action.payload.type ? Api.AddLogSpec.url : Api.AddLog.url
 					sendData(action, url, (data) => {
-						if (action.payload.isWife) {
-							let newRow = {
-								date: action.payload.date,
-								amount: action.payload.amount,
-								description: action.payload.description
-							}
-							state.data2.push(newRow)
-						} else {
-							action.payload.date_year = Number(action.payload.year)
-							action.payload.date = Number(action.payload.month)
-							let newRow = {
-								id: data.insertId,
-								date: action.payload.date,
-								type: action.payload.type,
-								amount: action.payload.amount,
-								date_year: action.payload.date_year,
-								description: action.payload.description
-							}
-							state.data.push(newRow)
-						}
-						Store.dispatch(addAccounting('Done', state))
+						Store.dispatch(getAllDatas('Pending'))
 					})
-					state.addPending = true
-					return state
+					return Object.assign({}, newState, {addPending: true})
 				case 'Done':
-					action.payload.addPending = false
-					return action.payload
+					return Object.assign({}, newState, action.payload, {addPending: false})
 			}
 			break
 		case 'UPDATE_ACCOUNTING':
-			sendData(action, Api.UpdateLog.url)
-			state.data = state.data.reverse()
-			state.data[action.payload.key] = action.payload
-			state.data = state.data.reverse()
-			return state
+			sendData(action, Api.UpdateLog.url, (data) => {
+				Store.dispatch(getAllDatas('Pending'))
+			})
+			return newState
 			break
 		case 'DELETE_ACCOUNTING':
-			sendData(action, Api.DeleteLog.url)
-			state.data = state.data.reverse()
-			delete state.data[action.payload.key]
-			state.data = state.data.reverse()
-			return state
+			sendData(action, Api.DeleteLog.url, (data) => {
+				Store.dispatch(getAllDatas('Pending'))
+			})
+			return newState
 			break
 		default:
 			return state
 	}
 }
 
-const Store = createStore(AccountingData)
+const Store = createStore(AccountingData, initData,
+	window.devToolsExtension && window.devToolsExtension()
+)
 
 export default Store

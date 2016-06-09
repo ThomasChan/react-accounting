@@ -2,108 +2,123 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Request from 'superagent'
-// import { orderBy } from 'lodash'
 
 import { getAllDatas } from './components/Actions.jsx'
 import Store from './components/Reducer.jsx'
 
+import LoginPage from './components/LoginPage.jsx'
 import ChartsDatas from './components/ChartsDatas.jsx'
 import Summary from './components/Summary.jsx'
 import FormOptions from './components/FormOptions.jsx'
 import DetailLists from './components/DetailLists.jsx'
-import WifeExpense from './components/WifeExpense.jsx'
-
-Store.dispatch(getAllDatas('Pending'))
+import LogSpecDetail from './components/LogSpecDetail.jsx'
 
 class App extends Component {
 
 	constructor(props) {
+		console.time('App constructor()')
 		super(props)
-		let initData = Store.getState()
-		let newState = {}
-		newState.data = this.parseAllData(initData.data)
-		newState.wifeData = this.parseWifeData(initData.data2)
-		newState.pending = initData.pending
-		newState.addPending = initData.addPending
-		this.state = newState
+		this.state = this.initGenData()
+		console.log(this.state)
+		if (this.state.loginStatus) {
+			Store.dispatch(getAllDatas('Pending'))
+		}
+		console.timeEnd('App constructor()')
 	}
 
 	componentDidMount() {
+		console.time('App componentDidMount()')
 		Store.subscribe(() => {
-			let initData = Store.getState()
-			console.log(initData)
-			let newState = {}
-			newState.data = this.parseAllData(initData.data)
-			newState.wifeData = this.parseWifeData(initData.data2)
-			newState.pending = initData.pending
-			newState.addPending = initData.addPending
-			this.setState(newState)
+			this.setState(this.initGenData())
 		})
+		console.timeEnd('App componentDidMount()')
+	}
+
+	initGenData() {
+		let initData = Store.getState()
+		let newState = {}
+		newState.loginStatus = initData.loginStatus
+		newState.loginPending = initData.loginPending
+		newState.log = this.parseLogData(initData.log)
+		newState.logSpec = this.parseLogSpecData(initData.logSpec)
+		newState.pending = initData.pending
+		newState.addPending = initData.addPending
+		return newState
 	}
 
 	render() {
 		let height = Math.ceil(window.innerHeight / 2)
-		this.state.data.chartsData.height = height
+		this.state.log.chartsData.height = height
 		return <div>
-			{this.state.pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
-			<div className="container">
-				<div className="columns">
-					<div className="column col-12">
-						<h6>收支趋势</h6>
-						<ChartsDatas data={this.state.data.chartsData} />
+		{!this.state.loginStatus ?
+			<LoginPage pending={this.state.loginPending} />
+		:
+			<div>
+				{this.state.pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
+				<div className="container">
+					<div className="columns">
+						<div className="column col-12">
+							<h6>收支趋势</h6>
+							<ChartsDatas data={this.state.log.chartsData} />
+						</div>
 					</div>
-				</div>
-				<div className="columns">
-					<div className="column col-3">
-						<h6>老婆的钱</h6>
-						<WifeExpense data={this.state.wifeData} />
-					</div>
-					<div className="column col-5">
-						<h6>明细</h6>
-						<DetailLists data={this.state.data.detailsData} />
-					</div>
-					<div className="column col-4">
-						<h6>汇总</h6>
-						<Summary data={this.state.data.sum} />
-						<FormOptions pending={this.state.pending} />
+					<div className="columns">
+						<div className="column col-3">
+							<h6>老婆的钱</h6>
+							<LogSpecDetail data={this.state.logSpec} />
+						</div>
+						<div className="column col-5">
+							<h6>明细</h6>
+							<DetailLists data={this.state.log.detailsData} />
+						</div>
+						<div className="column col-4">
+							<h6>汇总</h6>
+							<Summary data={this.state.log.sum} />
+							<FormOptions pending={this.state.pending} />
+						</div>
 					</div>
 				</div>
 			</div>
+		}
 		</div>
 		
 	}
 
 	myOrderBy(prev, next) {
-		let prevDateYear = Number(prev.date_year)
-		let prevDate = Number(prev.date)
-		let prevId = Number(prev.id)
+		if (prev && next) {
+			let prevDateYear = Number(prev.date_year)
+			let prevDate = Number(prev.date)
+			let prevId = Number(prev.id)
 
-		let nextDateYear = Number(next.date_year)
-		let nextDate = Number(next.date)
-		let nextId = Number(next.id)
+			let nextDateYear = Number(next.date_year)
+			let nextDate = Number(next.date)
+			let nextId = Number(next.id)
 
-		if (prevDateYear < nextDateYear) {
-			return -1
-		}
-		if (prevDateYear > nextDateYear) {
-			return 1
-		}
-		if (prevDate < nextDate) {
-			return -1
-		}
-		if (prevDate > nextDate) {
-			return 1
-		}
-		if (prevId < nextId) {
-			return -1
-		}
-		if (prevId > nextId) {
-			return 1
+			if (prevDateYear < nextDateYear) {
+				return -1
+			}
+			if (prevDateYear > nextDateYear) {
+				return 1
+			}
+			if (prevDate < nextDate) {
+				return -1
+			}
+			if (prevDate > nextDate) {
+				return 1
+			}
+			if (prevId < nextId) {
+				return -1
+			}
+			if (prevId > nextId) {
+				return 1
+			}
 		}
 		return 0
 	}
 
-	parseAllData(_data) {
+	parseLogData(_data) {
+		console.time('App parseAllData()')
+		console.log(_data)
 		// let data = orderBy(JSON.parse(JSON.stringify(_data)), ['date_year', 'asc'], ['date', 'asc'], ['id', 'asc'])
 		let data = JSON.parse(JSON.stringify(_data)).sort(this.myOrderBy)
 		let chartsData = this.parseChartsData(data)
@@ -140,10 +155,12 @@ class App extends Component {
 				resData.detailsData[_date].push(row)
 			}
 		})
+		console.time('App parseAllData()')
 		return resData
 	}
 
 	parseChartsData(data) {
+		console.time('App parseChartsData()')
 		let tmpData = {}
 		let chartsData = {
 			"month": [],
@@ -173,10 +190,12 @@ class App extends Component {
 			chartsData.shouru.push(Number(tmpData[key].shouru.toFixed(2)))
 			chartsData.zhichu.push(Number(tmpData[key].zhichu.toFixed(2)))
 		})
+		console.timeEnd('App parseChartsData()')
 		return chartsData
 	}
 
-	parseWifeData(_data) {
+	parseLogSpecData(_data) {
+		console.time('App parseWifeData()')
 		var tableData = {}
 		if (_data.length) {
 			let data = JSON.parse(JSON.stringify(_data))
@@ -200,6 +219,7 @@ class App extends Component {
 			})
 			console.info(tableData)
 		}
+		console.timeEnd('App parseWifeData()')
 		return tableData
 	}
 

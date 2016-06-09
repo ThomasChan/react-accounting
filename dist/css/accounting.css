@@ -1,9 +1,22 @@
+.card{
+	width:342px;
+	height:270px;
+	border:none
+}
+.card-image img{
+	width: 124px;
+	margin-top: 10px;
+}
+.card-image,
+.card-header,
+.card-footer{text-align: center}
 .load-data-loading{
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,.1);
 }
+.card,
 .load-data-loading .loading{
 	position: absolute;
 	left:0;

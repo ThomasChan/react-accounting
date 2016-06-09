@@ -1,11 +1,11 @@
-var config = require('./config')
-
+var db = require('./config').db
 var pool = require('mysql').createPool({
-    host: config.host,
-    user: config.user,
-    password: config.pwd,
-    database: config.db
+    host: db.host,
+    user: db.user,
+    password: db.pwd,
+    database: db.db
 });
+exports.pool = pool
 exports.query = function(query, callback) {
    pool.query(query, function(err, rows, fields) {
       if (err) { return callback(err, null); }

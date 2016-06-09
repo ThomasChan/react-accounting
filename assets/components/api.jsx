@@ -1,5 +1,8 @@
 // http://react.acounting.com
 export const Api = {
+	'Login': {
+		'url': '/api/Login'
+	},
 	'GetHomeData': {
 		'url': '/api/GetHomeData'
 	},
@@ -13,8 +16,8 @@ export const Api = {
 			'description': ''
 		}
 	},
-	'AddWifeLog': {
-		'url': '/api/wife/AddLog'
+	'AddLogSpec': {
+		'url': '/api/AddLogSpec'
 	},
 	'UpdateLog': {
 		'url': '/api/UpdateLog',

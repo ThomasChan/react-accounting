@@ -23,13 +23,24 @@ export default class DetailLi extends Component {
 			newState['update_status'] = !newState['update_status']
 			this.setState(newState)
 		} else if (type == 'submit') {
-			Store.dispatch(updateAccounting(newState))
+			Store.dispatch(updateAccounting({
+				id: newState.id,
+				type: newState.type,
+				amount: newState.amount,
+				description: newState.description
+			}))
 			newState['update_status'] = false
 		} else if (type == 'delete') {
-			Store.dispatch(deleteAccounting(newState))
+			Store.dispatch(deleteAccounting({
+				id: newState.id
+			}))
 			newState['update_status'] = false
 		} else {
-			newState[e.target.name] = e.target.value
+			let key = e.target.name
+			if (e.target.name.match(/type\d+/)) {
+				key = 'type'
+			}
+			newState[key] = e.target.value
 			this.setState(newState)
 		}
 	}
@@ -43,14 +54,14 @@ export default class DetailLi extends Component {
 		return <li className="detail-li" key={this.state.id}>
 		{this.state.update_status ?
 			<div>
-				<label className="form-radio inline-block">
-					<input type="radio" name="type" value="1" 
+				<label className="form-radio inline-block" style={{width:'68px'}}>
+					<input type="radio" name={"type"+this.state.id} value="1" 
 						onChange={this.updateField.bind(this, null)} 
 						checked={this.state.type == 1 ? true : false} />
 					<i className="form-icon"></i> 收入
 				</label>
-				<label className="form-radio inline-block">
-					<input type="radio" name="type" value="2" 
+				<label className="form-radio inline-block" style={{width:'68px'}}>
+					<input type="radio" name={"type"+this.state.id} value="2" 
 						onChange={this.updateField.bind(this, null)} 
 						checked={this.state.type == 2 ? true : false} />
 					<i className="form-icon"></i> 支出
@@ -60,7 +71,7 @@ export default class DetailLi extends Component {
 						onChange={this.updateField.bind(this, null)}
 						value={this.state.amount} />
 				</span>
-				<span style={{marginLeft:'10px'}} className="inline-block">
+				<span style={{marginLeft:'10px',width:'100px'}} className="inline-block">
 					<input className="form-input" name="description" type="text" id="input-example-4" 
 						onChange={this.updateField.bind(this, null)}
 						value={this.state.description} />
@@ -69,8 +80,6 @@ export default class DetailLi extends Component {
 					onClick={this.updateField.bind(this, 'update')}>Cancel</span>
 				<span style={{marginLeft:'10px'}} className="inline-block btn btn-sm btn-submit"
 					onClick={this.updateField.bind(this, 'submit')}>Submit</span>
-				<span style={{marginLeft:'10px'}} className="inline-block btn btn-sm btn-delete"
-					onClick={this.updateField.bind(this, 'delete')}>Delete</span>
 			</div>
 		:
 			<div>
@@ -82,6 +91,9 @@ export default class DetailLi extends Component {
 				<span style={{marginLeft:'10px'}}
 					className="inline-block btn btn-sm detail-update-btn"
 					onClick={this.updateField.bind(this, 'update')}>Update</span>
+				<span style={{marginLeft:'10px'}}
+					className="inline-block btn btn-sm detail-update-btn btn-delete"
+					onClick={this.updateField.bind(this, 'delete')}>Delete</span>
 			</div>
 		}
 		</li>

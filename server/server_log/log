@@ -649,3 +649,577 @@
 2016-06-06 10:05:54 INFO  REQUEST: /api/GetHomeData 
 2016-06-06 10:05:54 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
 2016-06-06 10:05:54 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 10:08:01 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 10:08:01 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 10:08:01 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 10:42:33 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 10:42:33 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 10:42:33 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 10:54:03 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 10:54:03 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 10:54:03 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 16:07:01 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 16:07:01 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 16:07:01 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 16:11:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 16:11:15 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 16:11:15 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 16:15:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 16:15:44 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 16:15:44 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 17:55:23 INFO  REQUEST: /api/Login 
+2016-06-06 17:55:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 17:55:23 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 17:55:23 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 18:01:21 INFO  REQUEST: /api/Login 
+2016-06-06 18:01:21 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 18:01:21 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 18:01:21 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 18:04:27 INFO  REQUEST: /api/Login 
+2016-06-06 18:04:27 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 18:04:27 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 18:04:27 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:07:37 INFO  REQUEST: /api/Login 
+2016-06-06 19:13:23 INFO  REQUEST: /api/Login 
+2016-06-06 19:19:18 INFO  REQUEST: /api/Login 
+2016-06-06 19:19:18 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:19:18 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 19:19:18 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:28:27 INFO  REQUEST: /api/Login 
+2016-06-06 19:28:28 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:28:28 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 19:28:28 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:28:39 INFO  REQUEST: /api/Login 
+2016-06-06 19:28:39 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:28:39 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 19:28:39 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:29:27 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 19:29:27 INFO  update accounting_log set type=2 ,amount=12.3 ,description="早餐" where id=120 
+2016-06-06 19:34:40 INFO  REQUEST: /api/Login 
+2016-06-06 19:34:40 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:34:40 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-06 19:34:40 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:35:51 INFO  REQUEST: /api/Login 
+2016-06-06 19:35:51 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:35:51 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 19:35:51 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:36:01 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 19:36:01 INFO  update accounting_log_test set type=1 ,amount=110 ,description="吃饭aaaa" where id=201 
+2016-06-06 19:37:10 INFO  REQUEST: /api/Login 
+2016-06-06 19:37:11 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:37:11 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 19:37:11 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:51:43 INFO  REQUEST: /api/Login 
+2016-06-06 19:51:43 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:51:43 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 19:51:43 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:51:51 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 19:51:51 INFO  update accounting_log_test set type=1 ,amount=110 ,description="吃饭" where id=201 
+2016-06-06 19:56:15 INFO  REQUEST: /api/Login 
+2016-06-06 19:56:16 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 19:56:16 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 19:56:16 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 19:56:19 INFO  REQUEST: /api/AddLog 
+2016-06-06 19:56:19 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,0,"吃饭") 
+2016-06-06 20:18:19 INFO  REQUEST: /api/Login 
+2016-06-06 20:18:20 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 20:18:20 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 20:18:20 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 20:18:43 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 20:20:32 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 20:20:34 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 20:20:35 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 20:28:06 INFO  REQUEST: /api/Login 
+2016-06-06 20:28:06 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 20:28:06 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 20:28:07 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 20:28:16 INFO  REQUEST: /api/AddLog 
+2016-06-06 20:29:10 INFO  REQUEST: /api/Login 
+2016-06-06 21:55:39 INFO  REQUEST: /api/Login 
+2016-06-06 21:56:02 INFO  REQUEST: /api/Login 
+2016-06-06 21:56:29 INFO  REQUEST: /api/Login 
+2016-06-06 21:56:29 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 21:56:29 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 21:56:29 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 21:56:38 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 21:59:10 INFO  REQUEST: /api/Login 
+2016-06-06 21:59:10 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 21:59:10 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 21:59:10 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 21:59:48 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:12:46 INFO  REQUEST: /api/Login 
+2016-06-06 23:15:40 INFO  REQUEST: /api/Login 
+2016-06-06 23:15:41 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:15:41 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:15:41 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:15:48 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:18:42 INFO  REQUEST: /api/Login 
+2016-06-06 23:18:42 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:18:42 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:18:42 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:19:01 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:19:25 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:19:34 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:23:44 INFO  REQUEST: /api/Login 
+2016-06-06 23:23:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:23:44 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:23:44 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:23:48 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:24:16 INFO  REQUEST: /api/Login 
+2016-06-06 23:24:17 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:24:17 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:24:17 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:24:20 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:25:46 INFO  REQUEST: /api/Login 
+2016-06-06 23:25:47 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:25:47 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:25:47 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:25:51 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:19 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:19 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:20 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:20 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:20 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:20 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:21 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:21 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:21 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:33 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:26:36 INFO  REQUEST: /api/Login 
+2016-06-06 23:26:36 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:26:36 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:26:36 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:26:44 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:27:29 INFO  REQUEST: /api/Login 
+2016-06-06 23:27:47 INFO  REQUEST: /api/Login 
+2016-06-06 23:27:48 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:27:48 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:27:48 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:27:55 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:32:52 INFO  REQUEST: /api/Login 
+2016-06-06 23:32:52 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:32:52 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:32:53 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:32:57 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:33:05 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:33:12 INFO  REQUEST: /api/Login 
+2016-06-06 23:33:12 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:33:12 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:33:12 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:37:45 INFO  REQUEST: /api/Login 
+2016-06-06 23:37:45 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:37:45 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:37:45 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:37:53 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:38:37 INFO  REQUEST: /api/Login 
+2016-06-06 23:38:37 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:38:37 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:38:37 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:40:14 INFO  REQUEST: /api/Login 
+2016-06-06 23:40:14 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:40:14 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:40:14 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:40:23 INFO  REQUEST: /api/Login 
+2016-06-06 23:40:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:40:23 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:40:23 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:40:27 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:41:03 INFO  REQUEST: /api/Login 
+2016-06-06 23:41:03 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:41:03 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:41:03 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:43:15 INFO  REQUEST: /api/Login 
+2016-06-06 23:43:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:43:15 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:43:15 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:43:19 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:44:32 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:44:50 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:46:18 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:46:31 INFO  REQUEST: /api/Login 
+2016-06-06 23:46:42 INFO  REQUEST: /api/Login 
+2016-06-06 23:47:30 INFO  REQUEST: /api/Login 
+2016-06-06 23:47:46 INFO  REQUEST: /api/Login 
+2016-06-06 23:47:46 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:47:46 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:47:46 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:48:17 INFO  REQUEST: /api/Login 
+2016-06-06 23:48:17 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:48:17 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:48:17 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:49:38 INFO  REQUEST: /api/Login 
+2016-06-06 23:49:38 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:49:38 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:49:38 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:52:04 INFO  REQUEST: /api/Login 
+2016-06-06 23:52:13 INFO  REQUEST: /api/Login 
+2016-06-06 23:52:13 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:52:13 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:52:13 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:52:17 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:54:21 INFO  REQUEST: /api/Login 
+2016-06-06 23:54:21 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:54:21 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:54:21 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:54:34 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:54:34 INFO  delete from accounting_log_test where id=202 
+2016-06-06 23:58:44 INFO  REQUEST: /api/Login 
+2016-06-06 23:58:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-06 23:58:44 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-06 23:58:45 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-06 23:58:51 INFO  REQUEST: /api/DeleteLog 
+2016-06-06 23:58:51 INFO  delete from accounting_log_test where id=201 
+2016-06-06 23:59:06 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:06 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭" where id=200 
+2016-06-06 23:59:12 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:12 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭aaa" where id=200 
+2016-06-06 23:59:16 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:16 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭bbb" where id=200 
+2016-06-06 23:59:19 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:19 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭ccc" where id=200 
+2016-06-06 23:59:25 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:25 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭a" where id=199 
+2016-06-06 23:59:29 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:29 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭b" where id=199 
+2016-06-06 23:59:33 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:33 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭c" where id=199 
+2016-06-06 23:59:36 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:36 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭d" where id=198 
+2016-06-06 23:59:42 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:42 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭e" where id=197 
+2016-06-06 23:59:52 INFO  REQUEST: /api/UpdateLog 
+2016-06-06 23:59:52 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭f" where id=197 
+2016-06-07 00:00:05 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:00:05 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭g" where id=197 
+2016-06-07 00:00:20 INFO  REQUEST: /api/Login 
+2016-06-07 00:00:20 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:00:20 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:00:20 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:01:48 INFO  REQUEST: /api/Login 
+2016-06-07 00:01:48 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:01:48 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:01:48 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:02:20 INFO  REQUEST: /api/Login 
+2016-06-07 00:02:20 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:02:20 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:02:20 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:02:26 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:02:26 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭e" where id=196 
+2016-06-07 00:02:30 INFO  REQUEST: /api/Login 
+2016-06-07 00:02:30 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:02:30 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:02:30 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:04:55 INFO  REQUEST: /api/Login 
+2016-06-07 00:04:55 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:04:55 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:04:55 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:05:01 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:01 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭f" where id=195 
+2016-06-07 00:05:05 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:05 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭g" where id=194 
+2016-06-07 00:05:10 INFO  REQUEST: /api/Login 
+2016-06-07 00:05:10 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:05:10 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:05:10 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:05:20 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:20 INFO  update accounting_log_test set type=1 ,amount=1111 ,description="吃饭a" where id=200 
+2016-06-07 00:05:25 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:25 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭b" where id=199 
+2016-06-07 00:05:34 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:34 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭e" where id=197 
+2016-06-07 00:05:41 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:41 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭f" where id=197 
+2016-06-07 00:05:47 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:47 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭h" where id=196 
+2016-06-07 00:05:53 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:05:53 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭g" where id=196 
+2016-06-07 00:06:08 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:06:08 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭i" where id=193 
+2016-06-07 00:06:14 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:06:14 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭j" where id=192 
+2016-06-07 00:06:17 INFO  REQUEST: /api/Login 
+2016-06-07 00:06:17 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:06:17 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:06:17 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:10:34 INFO  REQUEST: /api/Login 
+2016-06-07 00:10:34 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:10:34 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:10:34 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:10:44 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:10:44 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭c" where id=198 
+2016-06-07 00:10:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:10:44 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:10:44 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:10:49 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:10:49 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭d" where id=197 
+2016-06-07 00:10:49 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:10:49 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:10:49 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:10:55 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:10:55 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭e" where id=196 
+2016-06-07 00:10:55 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:10:55 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:10:55 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:11:01 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:11:01 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭h" where id=193 
+2016-06-07 00:11:02 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:11:02 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:11:02 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:11 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:12:11 INFO  update accounting_log_test set type=1 ,amount=10111 ,description="吃饭j" where id=191 
+2016-06-07 00:12:11 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:11 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:11 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:16 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:12:16 INFO  update accounting_log_test set type=1 ,amount=10 ,description="吃饭i" where id=192 
+2016-06-07 00:12:16 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:16 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:16 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:26 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:12:26 INFO  delete from accounting_log_test where id=196 
+2016-06-07 00:12:26 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:26 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:26 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:38 INFO  REQUEST: /api/AddLog 
+2016-06-07 00:12:38 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,0,"吃饭") 
+2016-06-07 00:12:38 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:38 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:38 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:43 INFO  REQUEST: /api/UpdateLog 
+2016-06-07 00:12:43 INFO  update accounting_log_test set type=1 ,amount=111111111110 ,description="吃饭" where id=203 
+2016-06-07 00:12:43 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:43 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:43 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:12:58 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:12:58 INFO  delete from accounting_log_test where id=203 
+2016-06-07 00:12:58 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:12:58 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:12:58 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:13:15 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:13:15 INFO  delete from accounting_log_test where id=200 
+2016-06-07 00:13:15 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:13:15 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:13:15 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:13:18 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:13:18 INFO  delete from accounting_log_test where id=192 
+2016-06-07 00:13:18 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:13:18 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:13:18 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:13:21 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:13:21 INFO  delete from accounting_log_test where id=197 
+2016-06-07 00:13:21 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:13:21 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:13:21 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:13:23 INFO  REQUEST: /api/DeleteLog 
+2016-06-07 00:13:23 INFO  delete from accounting_log_test where id=195 
+2016-06-07 00:13:23 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:13:23 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 00:13:23 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:17:39 INFO  REQUEST: /api/Login 
+2016-06-07 00:17:39 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:17:39 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 00:17:39 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:39:30 INFO  REQUEST: /api/AddLog 
+2016-06-07 00:39:30 INFO  insert into accounting_log (date_year, date, type, amount, description) values("2016",6,2,24,"流量 500 M") 
+2016-06-07 00:39:30 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:39:30 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 00:39:30 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:39:45 INFO  REQUEST: /api/wife/AddLog 
+2016-06-07 00:39:45 INFO  insert into accounting_log_for_wife (date, amount, description) values("2016-06-07",24,"流量 500 M") 
+2016-06-07 00:39:45 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:39:45 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 00:39:45 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 00:59:25 INFO  REQUEST: /api/Login 
+2016-06-07 00:59:25 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 00:59:25 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 00:59:25 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 19:35:22 INFO  REQUEST: /api/Login 
+2016-06-07 19:35:22 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 19:35:22 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 19:35:22 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 19:35:40 INFO  REQUEST: /api/AddLog 
+2016-06-07 19:35:40 INFO  insert into accounting_log (date_year, date, type, amount, description) values("2016",6,2,15000,"家里") 
+2016-06-07 19:35:41 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 19:35:41 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 19:35:41 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 19:36:00 INFO  REQUEST: /api/AddLog 
+2016-06-07 19:36:00 INFO  insert into accounting_log (date_year, date, type, amount, description) values("2016",6,2,98.9,"打车（西站）") 
+2016-06-07 19:36:01 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 19:36:01 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 19:36:01 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 19:37:07 INFO  REQUEST: /api/AddLog 
+2016-06-07 19:37:07 INFO  insert into accounting_log (date_year, date, type, amount, description) values("2016",6,2,50,"打车") 
+2016-06-07 19:37:07 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 19:37:07 INFO  select * from accounting_log order by date_year asc, date asc, type asc 
+2016-06-07 19:37:07 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 21:13:36 INFO  REQUEST: /api/Login 
+2016-06-07 21:13:36 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 21:13:36 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 21:13:36 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 21:13:44 INFO  REQUEST: /api/AddLog 
+2016-06-07 21:13:44 INFO  insert into accounting_log_test (date_year, date, type, amount, description) values("2016",6,1,1110,"吃饭") 
+2016-06-07 21:13:44 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 21:13:44 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 21:13:44 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-07 21:14:10 INFO  REQUEST: /api/Login 
+2016-06-07 21:14:10 INFO  REQUEST: /api/GetHomeData 
+2016-06-07 21:14:10 INFO  select * from accounting_log_test order by date_year asc, date asc, type asc 
+2016-06-07 21:14:10 INFO  select * from accounting_log_for_wife order by date asc 
+2016-06-09 09:46:16 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 09:56:49 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 09:56:49 INFO  Called read 
+2016-06-09 09:56:49 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 09:56:49 INFO  Called read 
+2016-06-09 09:56:49 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:02:37 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:02:37 INFO  Called read 
+2016-06-09 10:02:37 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:02:37 INFO  Called read 
+2016-06-09 10:02:37 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:07 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:07 INFO  Called read 
+2016-06-09 10:03:07 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:07 INFO  Called read 
+2016-06-09 10:03:07 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:09 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:09 INFO  Called read 
+2016-06-09 10:03:09 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:09 INFO  Called read 
+2016-06-09 10:03:09 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:10 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:10 INFO  Called read 
+2016-06-09 10:03:10 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:10 INFO  Called read 
+2016-06-09 10:03:10 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:11 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:11 INFO  Called read 
+2016-06-09 10:03:11 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:11 INFO  Called read 
+2016-06-09 10:03:11 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:12 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:12 INFO  Called read 
+2016-06-09 10:03:12 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:12 INFO  Called read 
+2016-06-09 10:03:12 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:14 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:14 INFO  Called read 
+2016-06-09 10:03:14 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:14 INFO  Called read 
+2016-06-09 10:03:14 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:03:15 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:03:15 INFO  Called read 
+2016-06-09 10:03:15 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:03:15 INFO  Called read 
+2016-06-09 10:03:15 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:06:33 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:06:33 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:06:33 INFO  Called read 
+2016-06-09 10:06:33 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:06:33 INFO  Called read 
+2016-06-09 10:06:33 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:06:37 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:06:37 INFO  Called read 
+2016-06-09 10:06:37 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:06:37 INFO  Called read 
+2016-06-09 10:06:37 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:08:57 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:10:58 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:13:44 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:13:44 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:13:44 INFO  Called read 
+2016-06-09 10:13:44 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:13:44 INFO  Called read 
+2016-06-09 10:13:44 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:14:09 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:14:09 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:14:09 INFO  Called read 
+2016-06-09 10:14:09 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:14:09 INFO  Called read 
+2016-06-09 10:14:09 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:15:38 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:15:38 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:15:38 INFO  Called read 
+2016-06-09 10:15:38 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:15:38 INFO  Called read 
+2016-06-09 10:15:38 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:23:18 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:23:18 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:23:18 INFO  Called read 
+2016-06-09 10:23:18 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:23:18 INFO  Called read 
+2016-06-09 10:23:18 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:23:34 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:23:34 INFO  Called read 
+2016-06-09 10:23:34 INFO  SELECT * FROM accounting_log_test 
+2016-06-09 10:23:34 INFO  Called read 
+2016-06-09 10:23:34 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:24:09 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:24:09 INFO  Called read 
+2016-06-09 10:24:09 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:24:09 INFO  Called read 
+2016-06-09 10:24:09 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:24:31 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"13.14","description":"红包","date_year":2016,"date":6,"type":"2"} 
+2016-06-09 10:24:31 INFO  Called save 
+2016-06-09 10:24:31 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("13.14", "红包", 2016, 6, "2") 
+2016-06-09 10:24:31 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:24:31 INFO  Called read 
+2016-06-09 10:24:31 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:24:31 INFO  Called read 
+2016-06-09 10:24:31 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:24:49 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"13.14","description":"红包","date":"2016-06-09"} 
+2016-06-09 10:24:49 INFO  Called save 
+2016-06-09 10:24:49 INFO  INSERT INTO accounting_log (amount, description, date) VALUES ("13.14", "红包", "2016-06-09") 
+2016-06-09 10:24:49 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:24:49 INFO  Called read 
+2016-06-09 10:24:49 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:24:49 INFO  Called read 
+2016-06-09 10:24:49 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:24:57 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:24:57 INFO  Called read 
+2016-06-09 10:24:57 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:24:57 INFO  Called read 
+2016-06-09 10:24:57 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:28:48 INFO  REQUEST: /api/DeleteLog ; BODY:{"id":163} 
+2016-06-09 10:28:48 INFO  Called remove 
+2016-06-09 10:28:48 INFO  {"id":163} 
+2016-06-09 10:28:48 INFO  DELETE FROM accounting_log WHERE id=163 
+2016-06-09 10:28:48 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:28:48 INFO  Called read 
+2016-06-09 10:28:48 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:28:48 INFO  Called read 
+2016-06-09 10:28:48 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:31:42 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"13.14","description":"红包","date":"2016-06-09"} 
+2016-06-09 10:31:42 INFO  Called save 
+2016-06-09 10:31:42 INFO  INSERT INTO accounting_log (amount, description, date) VALUES ("13.14", "红包", "2016-06-09") 
+2016-06-09 10:31:42 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:31:42 INFO  Called read 
+2016-06-09 10:31:42 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:31:42 INFO  Called read 
+2016-06-09 10:31:42 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:33:15 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"8.3","description":"早餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-09 10:33:15 INFO  Called save 
+2016-06-09 10:33:15 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("8.3", "早餐", 2016, 6, "2") 
+2016-06-09 10:33:15 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:33:15 INFO  Called read 
+2016-06-09 10:33:15 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:33:15 INFO  Called read 
+2016-06-09 10:33:15 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:37:24 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:37:24 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:37:24 INFO  Called read 
+2016-06-09 10:37:24 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:37:25 INFO  Called read 
+2016-06-09 10:37:25 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:38:02 INFO  REQUEST: /api/AddLogSpec ; BODY:{"amount":"13.14","description":"早餐","date":"2016-06-09"} 
+2016-06-09 10:38:02 INFO  Called save 
+2016-06-09 10:38:02 INFO  INSERT INTO accounting_log_for_wife (amount, description, date) VALUES ("13.14", "早餐", "2016-06-09") 
+2016-06-09 10:38:02 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:38:02 INFO  Called read 
+2016-06-09 10:38:02 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:38:02 INFO  Called read 
+2016-06-09 10:38:02 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:38:30 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:38:30 INFO  Called read 
+2016-06-09 10:38:30 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:38:30 INFO  Called read 
+2016-06-09 10:38:30 INFO  SELECT * FROM accounting_log_for_wife 

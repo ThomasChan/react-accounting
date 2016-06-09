@@ -1,8 +1,19 @@
-module.exports = {
-	host: '127.0.0.1',
-	user: 'root',
-	pwd: '',
-	db: 'money',
-	table: 'accounting_log',
-	table2: 'accounting_log_for_wife'
+/**
+ * config file
+ */
+
+
+/**
+ * db config
+ * @type {Object}
+ */
+exports.db = {
+	"host": "127.0.0.1",
+	"user": "root",
+	"pwd": "",
+	"db": "money",
+	"table":  {
+		"Log": "accounting_log",
+		"LogSpec": "accounting_log_for_wife"
+	}
 }
