@@ -47,7 +47,7 @@ class App extends Component {
 	}
 
 	render() {
-		let height = Math.ceil(window.innerHeight / 2)
+		let height = Math.ceil(window.innerHeight / 4) * 3
 		this.state.log.chartsData.height = height
 		return <div>
 		{!this.state.loginStatus ?
@@ -58,8 +58,7 @@ class App extends Component {
 				<div className="container">
 					<div className="columns">
 						<div className="column col-12">
-							<h6>收支趋势</h6>
-							<ChartsDatas data={this.state.log.chartsData} />
+							<ChartsDatas pending={this.state.pending} data={this.state.log.chartsData} />
 						</div>
 					</div>
 					<div className="columns">

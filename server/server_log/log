@@ -1223,3 +1223,377 @@
 2016-06-09 10:38:30 INFO  SELECT * FROM accounting_log 
 2016-06-09 10:38:30 INFO  Called read 
 2016-06-09 10:38:30 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 10:39:46 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 10:39:47 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 10:39:47 INFO  Called read 
+2016-06-09 10:39:47 INFO  SELECT * FROM accounting_log 
+2016-06-09 10:39:47 INFO  Called read 
+2016-06-09 10:39:47 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-09 19:40:23 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-09 19:40:23 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-09 19:40:23 INFO  Called read 
+2016-06-09 19:40:23 INFO  SELECT * FROM accounting_log 
+2016-06-09 19:40:24 INFO  Called read 
+2016-06-09 19:40:24 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-12 09:57:01 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-12 09:57:01 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-12 09:57:01 INFO  Called read 
+2016-06-12 09:57:01 INFO  SELECT * FROM accounting_log 
+2016-06-12 09:57:25 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-12 09:57:25 INFO  Called read 
+2016-06-12 09:57:25 INFO  SELECT * FROM accounting_log 
+2016-06-12 09:57:25 INFO  Called read 
+2016-06-12 09:57:25 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-12 09:59:30 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"135","description":"照片","date_year":2016,"date":6,"type":"2"} 
+2016-06-12 09:59:30 INFO  Called save 
+2016-06-12 09:59:30 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("135", "照片", 2016, 6, "2") 
+2016-06-12 09:59:31 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-12 09:59:31 INFO  Called read 
+2016-06-12 09:59:31 INFO  SELECT * FROM accounting_log 
+2016-06-12 09:59:31 INFO  Called read 
+2016-06-12 09:59:31 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-13 11:05:06 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-13 11:05:07 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-13 11:05:07 INFO  Called read 
+2016-06-13 11:05:07 INFO  SELECT * FROM accounting_log 
+2016-06-13 11:05:07 INFO  Called read 
+2016-06-13 11:05:07 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-13 11:05:28 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"10797.91","description":"工资","date_year":2016,"date":"5","type":1} 
+2016-06-13 11:05:28 INFO  Called save 
+2016-06-13 11:05:28 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("10797.91", "工资", 2016, "5", 1) 
+2016-06-13 11:05:29 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-13 11:05:29 INFO  Called read 
+2016-06-13 11:05:29 INFO  SELECT * FROM accounting_log 
+2016-06-13 11:05:29 INFO  Called read 
+2016-06-13 11:05:29 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-13 11:06:15 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"15","description":"晚餐","date_year":2016,"date":"6","type":"2"} 
+2016-06-13 11:06:15 INFO  Called save 
+2016-06-13 11:06:15 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("15", "晚餐", 2016, "6", "2") 
+2016-06-13 11:06:15 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-13 11:06:15 INFO  Called read 
+2016-06-13 11:06:15 INFO  SELECT * FROM accounting_log 
+2016-06-13 11:06:15 INFO  Called read 
+2016-06-13 11:06:15 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-13 11:06:25 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"20.6","description":"打车","date_year":2016,"date":"6","type":"2"} 
+2016-06-13 11:06:25 INFO  Called save 
+2016-06-13 11:06:25 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("20.6", "打车", 2016, "6", "2") 
+2016-06-13 11:06:25 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-13 11:06:25 INFO  Called read 
+2016-06-13 11:06:25 INFO  SELECT * FROM accounting_log 
+2016-06-13 11:06:25 INFO  Called read 
+2016-06-13 11:06:25 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-13 11:06:46 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"20","description":"照片","date_year":2016,"date":"6","type":"2"} 
+2016-06-13 11:06:46 INFO  Called save 
+2016-06-13 11:06:46 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("20", "照片", 2016, "6", "2") 
+2016-06-13 11:06:46 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-13 11:06:46 INFO  Called read 
+2016-06-13 11:06:46 INFO  SELECT * FROM accounting_log 
+2016-06-13 11:06:46 INFO  Called read 
+2016-06-13 11:06:46 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:17:16 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-14 10:17:16 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:17:16 INFO  Called read 
+2016-06-14 10:17:16 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:17:33 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:17:33 INFO  Called read 
+2016-06-14 10:17:33 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:17:33 INFO  Called read 
+2016-06-14 10:17:33 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:18:09 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"23","description":"午餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 10:18:09 INFO  Called save 
+2016-06-14 10:18:09 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("23", "午餐", 2016, 6, "2") 
+2016-06-14 10:18:10 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:18:10 INFO  Called read 
+2016-06-14 10:18:10 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:18:10 INFO  Called read 
+2016-06-14 10:18:10 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:18:27 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"21.99","description":"打车","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 10:18:27 INFO  Called save 
+2016-06-14 10:18:27 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("21.99", "打车", 2016, 6, "2") 
+2016-06-14 10:18:27 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:18:27 INFO  Called read 
+2016-06-14 10:18:27 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:18:27 INFO  Called read 
+2016-06-14 10:18:27 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:18:43 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"20","description":"晚餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 10:18:43 INFO  Called save 
+2016-06-14 10:18:43 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("20", "晚餐", 2016, 6, "2") 
+2016-06-14 10:18:44 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:18:44 INFO  Called read 
+2016-06-14 10:18:44 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:18:44 INFO  Called read 
+2016-06-14 10:18:44 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:19:01 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"54","description":"打车","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 10:19:01 INFO  Called save 
+2016-06-14 10:19:01 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("54", "打车", 2016, 6, "2") 
+2016-06-14 10:19:02 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:19:02 INFO  Called read 
+2016-06-14 10:19:02 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:19:02 INFO  Called read 
+2016-06-14 10:19:02 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 10:19:13 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"14.79","description":"早餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 10:19:13 INFO  Called save 
+2016-06-14 10:19:13 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("14.79", "早餐", 2016, 6, "2") 
+2016-06-14 10:19:14 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 10:19:14 INFO  Called read 
+2016-06-14 10:19:14 INFO  SELECT * FROM accounting_log 
+2016-06-14 10:19:14 INFO  Called read 
+2016-06-14 10:19:14 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 13:29:56 INFO  REQUEST: /beacon.js ; BODY:{} 
+2016-06-14 13:29:57 INFO  REQUEST: /beacon.js ; BODY:{} 
+2016-06-14 15:08:31 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-14 15:08:32 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 15:08:32 INFO  Called read 
+2016-06-14 15:08:32 INFO  SELECT * FROM accounting_log 
+2016-06-14 15:08:32 INFO  Called read 
+2016-06-14 15:08:32 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 15:32:18 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-14 15:32:18 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 15:32:18 INFO  Called read 
+2016-06-14 15:32:18 INFO  SELECT * FROM accounting_log 
+2016-06-14 15:32:18 INFO  Called read 
+2016-06-14 15:32:18 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 16:17:21 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-14 16:17:21 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 16:17:21 INFO  Called read 
+2016-06-14 16:17:21 INFO  SELECT * FROM accounting_log 
+2016-06-14 16:17:21 INFO  Called read 
+2016-06-14 16:17:21 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 16:17:49 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"52.1","description":"红包","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 16:17:49 INFO  Called save 
+2016-06-14 16:17:49 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("52.1", "红包", 2016, 6, "2") 
+2016-06-14 16:17:49 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 16:17:49 INFO  Called read 
+2016-06-14 16:17:49 INFO  SELECT * FROM accounting_log 
+2016-06-14 16:17:49 INFO  Called read 
+2016-06-14 16:17:49 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 16:18:05 INFO  REQUEST: /api/AddLogSpec ; BODY:{"amount":"52.1","description":"红包 姨妈","date":"2016-06-14"} 
+2016-06-14 16:18:05 INFO  Called save 
+2016-06-14 16:18:05 INFO  INSERT INTO accounting_log_for_wife (amount, description, date) VALUES ("52.1", "红包 姨妈", "2016-06-14") 
+2016-06-14 16:18:06 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 16:18:06 INFO  Called read 
+2016-06-14 16:18:06 INFO  SELECT * FROM accounting_log 
+2016-06-14 16:18:06 INFO  Called read 
+2016-06-14 16:18:06 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 16:35:06 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"52.1","description":"红包 姨妈","date_year":2016,"date":6,"type":"2"} 
+2016-06-14 16:35:06 INFO  Called save 
+2016-06-14 16:35:06 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("52.1", "红包 姨妈", 2016, 6, "2") 
+2016-06-14 16:35:06 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 16:35:06 INFO  Called read 
+2016-06-14 16:35:06 INFO  SELECT * FROM accounting_log 
+2016-06-14 16:35:06 INFO  Called read 
+2016-06-14 16:35:06 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-14 16:35:11 INFO  REQUEST: /api/AddLogSpec ; BODY:{"amount":"52.1","description":"红包 姨妈","date":"2016-06-14"} 
+2016-06-14 16:35:11 INFO  Called save 
+2016-06-14 16:35:11 INFO  INSERT INTO accounting_log_for_wife (amount, description, date) VALUES ("52.1", "红包 姨妈", "2016-06-14") 
+2016-06-14 16:35:11 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-14 16:35:11 INFO  Called read 
+2016-06-14 16:35:11 INFO  SELECT * FROM accounting_log 
+2016-06-14 16:35:11 INFO  Called read 
+2016-06-14 16:35:11 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:11:58 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-15 13:11:58 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:11:58 INFO  Called read 
+2016-06-15 13:11:58 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:11:58 INFO  Called read 
+2016-06-15 13:11:58 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:12:23 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"17","description":"晚餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-15 13:12:23 INFO  Called save 
+2016-06-15 13:12:23 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("17", "晚餐", 2016, 6, "2") 
+2016-06-15 13:12:23 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:12:23 INFO  Called read 
+2016-06-15 13:12:23 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:12:23 INFO  Called read 
+2016-06-15 13:12:23 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:12:35 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"21.9","description":"打车","date_year":2016,"date":6,"type":"2"} 
+2016-06-15 13:12:35 INFO  Called save 
+2016-06-15 13:12:35 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("21.9", "打车", 2016, 6, "2") 
+2016-06-15 13:12:35 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:12:35 INFO  Called read 
+2016-06-15 13:12:35 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:12:35 INFO  Called read 
+2016-06-15 13:12:35 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:12:52 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"47","description":"午餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-15 13:12:52 INFO  Called save 
+2016-06-15 13:12:52 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("47", "午餐", 2016, 6, "2") 
+2016-06-15 13:12:52 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:12:52 INFO  Called read 
+2016-06-15 13:12:52 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:12:52 INFO  Called read 
+2016-06-15 13:12:52 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:13:07 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"14.6","description":"早餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-15 13:13:07 INFO  Called save 
+2016-06-15 13:13:07 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("14.6", "早餐", 2016, 6, "2") 
+2016-06-15 13:13:07 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:13:07 INFO  Called read 
+2016-06-15 13:13:07 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:13:07 INFO  Called read 
+2016-06-15 13:13:07 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-15 13:13:43 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"13","description":"烟 南京","date_year":2016,"date":6,"type":"2"} 
+2016-06-15 13:13:43 INFO  Called save 
+2016-06-15 13:13:43 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("13", "烟 南京", 2016, 6, "2") 
+2016-06-15 13:13:44 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-15 13:13:44 INFO  Called read 
+2016-06-15 13:13:44 INFO  SELECT * FROM accounting_log 
+2016-06-15 13:13:44 INFO  Called read 
+2016-06-15 13:13:44 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 10:59:29 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 10:59:29 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 10:59:29 INFO  Called read 
+2016-06-16 10:59:29 INFO  SELECT * FROM accounting_log 
+2016-06-16 10:59:29 INFO  Called read 
+2016-06-16 10:59:29 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:01:55 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 11:01:55 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:01:55 INFO  Called read 
+2016-06-16 11:01:55 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:01:55 INFO  Called read 
+2016-06-16 11:01:55 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:14:15 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 11:14:15 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:14:15 INFO  Called read 
+2016-06-16 11:14:15 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:14:15 INFO  Called read 
+2016-06-16 11:14:15 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:18:14 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 11:18:14 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:18:14 INFO  Called read 
+2016-06-16 11:18:14 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:18:14 INFO  Called read 
+2016-06-16 11:18:14 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:20:37 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 11:20:38 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:20:38 INFO  Called read 
+2016-06-16 11:20:38 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:20:38 INFO  Called read 
+2016-06-16 11:20:38 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:21:57 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:21:57 INFO  Called read 
+2016-06-16 11:21:57 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:21:57 INFO  Called read 
+2016-06-16 11:21:57 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:22:48 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"22.93","description":"打车","date_year":2016,"date":6,"type":"2"} 
+2016-06-16 11:22:48 INFO  Called save 
+2016-06-16 11:22:48 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("22.93", "打车", 2016, 6, "2") 
+2016-06-16 11:22:49 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:22:49 INFO  Called read 
+2016-06-16 11:22:49 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:22:49 INFO  Called read 
+2016-06-16 11:22:49 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:23:05 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"310","description":"视频","date_year":2016,"date":6,"type":"2"} 
+2016-06-16 11:23:05 INFO  Called save 
+2016-06-16 11:23:05 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("310", "视频", 2016, 6, "2") 
+2016-06-16 11:23:06 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:23:06 INFO  Called read 
+2016-06-16 11:23:06 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:23:06 INFO  Called read 
+2016-06-16 11:23:06 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:23:22 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"16.4","description":"早餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-16 11:23:22 INFO  Called save 
+2016-06-16 11:23:22 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("16.4", "早餐", 2016, 6, "2") 
+2016-06-16 11:23:22 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:23:22 INFO  Called read 
+2016-06-16 11:23:22 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:23:22 INFO  Called read 
+2016-06-16 11:23:22 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:23:35 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"6","description":"纸巾","date_year":2016,"date":6,"type":"2"} 
+2016-06-16 11:23:35 INFO  Called save 
+2016-06-16 11:23:35 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("6", "纸巾", 2016, 6, "2") 
+2016-06-16 11:23:35 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:23:35 INFO  Called read 
+2016-06-16 11:23:35 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:23:35 INFO  Called read 
+2016-06-16 11:23:35 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:45:22 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 11:45:22 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:45:22 INFO  Called read 
+2016-06-16 11:45:22 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:45:23 INFO  Called read 
+2016-06-16 11:45:23 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 11:45:53 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 11:45:53 INFO  Called read 
+2016-06-16 11:45:53 INFO  SELECT * FROM accounting_log 
+2016-06-16 11:45:53 INFO  Called read 
+2016-06-16 11:45:53 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 12:07:19 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 12:07:19 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 12:07:19 INFO  Called read 
+2016-06-16 12:07:19 INFO  SELECT * FROM accounting_log 
+2016-06-16 12:07:19 INFO  Called read 
+2016-06-16 12:07:19 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 12:09:24 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 12:09:24 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 12:09:24 INFO  Called read 
+2016-06-16 12:09:24 INFO  SELECT * FROM accounting_log 
+2016-06-16 12:09:24 INFO  Called read 
+2016-06-16 12:09:24 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 12:12:12 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 12:12:12 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 12:12:12 INFO  Called read 
+2016-06-16 12:12:12 INFO  SELECT * FROM accounting_log 
+2016-06-16 12:12:12 INFO  Called read 
+2016-06-16 12:12:12 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 12:12:35 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 12:12:35 INFO  Called read 
+2016-06-16 12:12:35 INFO  SELECT * FROM accounting_log 
+2016-06-16 12:12:35 INFO  Called read 
+2016-06-16 12:12:35 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:02:42 INFO  REQUEST: /api/UpdateLog ; BODY:{"id":190,"type":2,"amount":310,"description":"涨经验"} 
+2016-06-16 14:02:42 INFO  Called save 
+2016-06-16 14:02:42 INFO  {"type":2,"amount":310,"description":"\"涨经验\""} 
+2016-06-16 14:02:42 INFO  UPDATE accounting_log SET type=2, amount=310, description="涨经验" WHERE id=190 
+2016-06-16 14:02:42 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:02:42 INFO  Called read 
+2016-06-16 14:02:42 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:02:42 INFO  Called read 
+2016-06-16 14:02:42 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:16:03 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 14:16:03 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:16:03 INFO  Called read 
+2016-06-16 14:16:03 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:16:03 INFO  Called read 
+2016-06-16 14:16:03 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:16:15 INFO  REQUEST: /favicon.ico ; BODY:{} 
+2016-06-16 14:16:17 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:16:17 INFO  Called read 
+2016-06-16 14:16:17 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:16:17 INFO  Called read 
+2016-06-16 14:16:17 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:16:41 INFO  REQUEST: /api/UpdateLog ; BODY:{"id":190,"type":2,"amount":310,"description":"吃一堑长一智"} 
+2016-06-16 14:16:41 INFO  Called save 
+2016-06-16 14:16:41 INFO  {"type":2,"amount":310,"description":"\"吃一堑长一智\""} 
+2016-06-16 14:16:41 INFO  UPDATE accounting_log SET type=2, amount=310, description="吃一堑长一智" WHERE id=190 
+2016-06-16 14:16:41 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:16:41 INFO  Called read 
+2016-06-16 14:16:41 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:16:41 INFO  Called read 
+2016-06-16 14:16:41 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:16:56 INFO  REQUEST: /api/UpdateLog ; BODY:{"id":190,"type":2,"amount":310,"description":"吃一堑长一智"} 
+2016-06-16 14:16:56 INFO  Called save 
+2016-06-16 14:16:56 INFO  {"type":2,"amount":310,"description":"\"吃一堑长一智\""} 
+2016-06-16 14:16:56 INFO  UPDATE accounting_log SET type=2, amount=310, description="吃一堑长一智" WHERE id=190 
+2016-06-16 14:16:56 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:16:56 INFO  Called read 
+2016-06-16 14:16:56 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:16:56 INFO  Called read 
+2016-06-16 14:16:56 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:17:12 INFO  REQUEST: /api/AddLog ; BODY:{"amount":"94","description":"午餐","date_year":2016,"date":6,"type":"2"} 
+2016-06-16 14:17:12 INFO  Called save 
+2016-06-16 14:17:12 INFO  INSERT INTO accounting_log (amount, description, date_year, date, type) VALUES ("94", "午餐", 2016, 6, "2") 
+2016-06-16 14:17:13 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:17:13 INFO  Called read 
+2016-06-16 14:17:13 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:17:13 INFO  Called read 
+2016-06-16 14:17:13 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:24:35 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 14:24:35 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:24:35 INFO  Called read 
+2016-06-16 14:24:35 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:24:35 INFO  Called read 
+2016-06-16 14:24:35 INFO  SELECT * FROM accounting_log_for_wife 
+2016-06-16 14:27:35 INFO  REQUEST: /api/Login ; BODY:{} 
+2016-06-16 14:27:35 INFO  REQUEST: /api/GetHomeData ; BODY:{} 
+2016-06-16 14:27:35 INFO  Called read 
+2016-06-16 14:27:35 INFO  SELECT * FROM accounting_log 
+2016-06-16 14:27:35 INFO  Called read 
+2016-06-16 14:27:35 INFO  SELECT * FROM accounting_log_for_wife 

@@ -24,6 +24,6 @@ app.post('/api/UpdateLog', routes.UpdateLog)
 app.post('/api/DeleteLog', routes.DeleteLog)
 
 
-app.listen(80, 'react.accounting.com', function() {
+app.listen(8001, 'react.accounting.com', function() {
 	console.log('listening at react.accounting.com')
 })

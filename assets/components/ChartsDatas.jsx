@@ -1,88 +1,61 @@
 import React, { Component } from 'react'
-import ReactHighcharts from 'react-highcharts'
+import Chart from 'rc-echarts/src/'
 
 export default class ChartsDatas extends Component {
 
 	constructor(props) {
 		super(props)
-        this.state = this.chartsConfig(props.data)
 	}
 
-    componentWillReceiveProps(nextProps) {
-        this.setState(this.chartsConfig(nextProps.data))
-    }
-
-    chartsConfig(newState) {
-        return {
-            chart: {
-                type: 'line',
-                height: newState.height,
-                backgroundColor: 'transparent'
-            },
-            colors: ['#61dafb', '#F75843'],
-            title: {
-                style: {
-                    'font-size': '12px',
-                    color: '#fff'
-                },
-                text: '收支详情'
-            },
-            legend: {
-                style: {
-                    color: '#000'
-                },
-                title: {
-                    style: {
-                        color: '#000'
-                    }
-                }
-            },
-            xAxis: {
-                labels: {
-                    style: {
-                        color: '#61dafb'
-                    }
-                },
-                gridLineColor: '#61dafb',
-                categories: newState.month
-            },
-            yAxis: {
-                labels: {
-                    style: {
-                        color: '#F75843'
-                    }
-                },
-                gridLineColor: '#F75843',
-                title: {
-                    style: {
-                        color: '#F75843'
-                    },
-                    text: 'Money (￥元)'
-                }
-            },
-            plotOptions: {
-                line: {
-                    dataLabels: {
-                        color: '#000',
-                        enabled: true
-                    },
-                    enableMouseTracking: false
-                }
-            },
-            series: [{
-                color: '#61dafb',
-                name: '收入',
-                data: newState.shouru
-            }, {
-                color: '#F75843',
-                name: '支出',
-                data: newState.zhichu
-            }]
+    shouldComponentUpdate(nextProps, nextStates) {
+        let isEqual = JSON.stringify(nextProps.data) == JSON.stringify(this.props.data)
+        console.log(isEqual)
+        if (nextProps.pending || isEqual) {
+            return false
         }
+        return true
     }
 
 	render() {
-		return <ReactHighcharts config={this.state} />
+        const options = {
+            height : this.props.data.height,
+            title : {
+                text: '收支趋势'
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['收入','支出']
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    dataView : {show: true, readOnly: false},
+                    magicType : {show: true, type: ['line', 'bar']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data: this.props.data.month,
+                    boundaryGap: ['5%', '5%']
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ]
+        }
+
+        return <Chart {...options}>
+            <Chart.Bar name="收入" data={this.props.data.shouru} showAllSymbol={true} smooth={true}/>
+            <Chart.Bar name="支出" data={this.props.data.zhichu} showAllSymbol={true} smooth={true}/>
+        </Chart>
 	}
 
 }
