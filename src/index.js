@@ -10,6 +10,7 @@ import App from './views/app'
 import Dashboard from './views/dashboard'
 import Metadata from './views/metadata'
 import Month from './views/month'
+import AddLog from './views/addLog'
 
 ReactDom.render(
   <Provider store={Store}>
@@ -19,6 +20,7 @@ ReactDom.render(
         <Route path="dashboard" component={Dashboard.Dashboard} />
         <Route path="metadata" component={Metadata.Metadata} />
         <Route path="metadata/:month" component={Month.Month} />
+        <Route path="addLog" component={AddLog.AddLog} />
       </Route>
     </Router>
   </Provider>,

@@ -91,14 +91,52 @@ class Month extends Component {
     })
   }
 
+  sortDetails(prev, next) {
+    if (prev && next) {
+      let prevDateYear = Number(prev.date_year)
+      let prevDate = Number(prev.date)
+      let prevId = Number(prev.id)
+
+      let nextDateYear = Number(next.date_year)
+      let nextDate = Number(next.date)
+      let nextId = Number(next.id)
+
+      if (prevDateYear < nextDateYear) {
+        return -1
+      }
+      if (prevDateYear > nextDateYear) {
+        return 1
+      }
+      if (prevDate < nextDate) {
+        return -1
+      }
+      if (prevDate > nextDate) {
+        return 1
+      }
+      if (prevId < nextId) {
+        return -1
+      }
+      if (prevId > nextId) {
+        return 1
+      }
+    }
+    return 0
+  }
+
   render() {
     const { month } = this.props.params
-    const { totalShouru, totalZhichu, details } = this.state
+    let { totalShouru, totalZhichu, details } = this.state
+    if (details && details.length) {
+      details = details.sort(this.sortDetails).map(row => {
+        row.typeCn = row.type === 1 ? '收入' : '支出'
+        return row
+      }).reverse()
+    }
     const columns = [
       {
         title: 'Type',
-        dataIndex: 'type',
-        key: 'type',
+        dataIndex: 'typeCn',
+        key: 'typeCn',
       },{
         title: 'Amount',
         dataIndex: 'amount',
@@ -112,19 +150,19 @@ class Month extends Component {
         key: 'action',
         render: (text, record, index) => (
           <span>
-            <Button type="primary" htmlType="submit" onClick={(e) => {this.openEdit(e, record, index)}}>Edit</Button>
+            <Button icon="edit" onClick={(e) => {this.openEdit(e, record, index)}} />
             <span className="ant-divider" />
-            <Button type="ghost" onClick={(e) => {this.deleteRow(e, record, index)}}>Delete</Button>
+            <Button icon="minus-circle-o" onClick={(e) => {this.deleteRow(e, record, index)}} />
           </span>
         ),
       }
     ]
     return <Spin tip="加载中..." spinning={this.state.isLoading} >
       <h2>
-        This is Meta Data Detail, {`${month} has been spended ${totalZhichu}, and income is ${totalShouru}`}
         <Button type="primary" shape="circle" icon="arrow-left" onClick={e => this.props.router.goBack()} />
+        This is Meta Data Detail, {`${month} has been spended ${totalZhichu}, and income is ${totalShouru}`}
       </h2>
-      {details.length
+      {details && details.length
       ? <Table columns={columns} dataSource={details} />
       : <Alert
         message="No Data"

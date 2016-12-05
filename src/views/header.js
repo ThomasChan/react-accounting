@@ -12,6 +12,10 @@ class Header extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log(this.props)
+  }
+
   changeRoute(e) {
     console.log(e.key)
     this.setState({
@@ -30,6 +34,9 @@ class Header extends Component {
         </Menu.Item>
         <Menu.Item key="metadata">
           <Link to='metadata'><Icon type="desktop" />Meta Data</Link>
+        </Menu.Item>
+        <Menu.Item key="addLog">
+          <Link to='addLog'><Icon type="plus-circle" />Add Log</Link>
         </Menu.Item>
       </Menu>
     </div>

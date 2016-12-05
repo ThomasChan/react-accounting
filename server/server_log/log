@@ -5912,3 +5912,1350 @@
 2016-12-05 11:26:29 INFO  REQUEST: /api/metadata ; BODY:{} 
 2016-12-05 11:26:29 INFO  Called read 
 2016-12-05 11:26:29 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:39:22 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:40:07 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:41:12 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:41:50 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:42:32 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:43:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:49:59 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:51:08 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:52:33 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:54:35 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:54:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 11:54:43 INFO  Called read 
+2016-12-05 11:54:43 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:54:43 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:54:44 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:55:00 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 11:55:00 INFO  Called read 
+2016-12-05 11:55:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:56:44 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 11:56:44 INFO  Called read 
+2016-12-05 11:56:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:56:44 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:56:45 INFO  REQUEST: /dist23018da83f5d5e544b0b.hot-update.json ; BODY:{} 
+2016-12-05 11:58:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:59:30 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 11:59:30 INFO  Called read 
+2016-12-05 11:59:30 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:59:30 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 11:59:31 INFO  REQUEST: /dist4642e8e04d90689e9a02.hot-update.json ; BODY:{} 
+2016-12-05 11:59:37 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 11:59:37 INFO  Called read 
+2016-12-05 11:59:37 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 11:59:54 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 11:59:54 INFO  Called read 
+2016-12-05 11:59:54 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 11:59:54 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:00:08 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:00:08 INFO  Called read 
+2016-12-05 12:00:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:08:37 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:09:52 INFO  REQUEST: /dist4642e8e04d90689e9a02.hot-update.json ; BODY:{} 
+2016-12-05 12:10:00 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:10:00 INFO  Called read 
+2016-12-05 12:10:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:10:04 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:10:04 INFO  Called read 
+2016-12-05 12:10:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:10:05 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:10:05 INFO  Called read 
+2016-12-05 12:10:05 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:11:45 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:12:43 INFO  REQUEST: /dist4642e8e04d90689e9a02.hot-update.json ; BODY:{} 
+2016-12-05 12:13:41 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:14:29 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:14:30 INFO  REQUEST: /dist1ab6d5edb4e86c09a598.hot-update.json ; BODY:{} 
+2016-12-05 12:15:07 INFO  REQUEST: /api/AddLog ; BODY:{"type":2,"amount":3000,"description":"打车","date_year":"2016","date":"11"} 
+2016-12-05 12:15:07 INFO  Called save 
+2016-12-05 12:15:07 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (2, 3000, "打车", "2016", "11") 
+2016-12-05 12:15:19 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:15:19 INFO  Called read 
+2016-12-05 12:15:19 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:15:23 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 12:15:23 INFO  Called read 
+2016-12-05 12:15:23 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 12:15:23 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:16:00 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:16:00 INFO  Called read 
+2016-12-05 12:16:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:01 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:16:01 INFO  Called read 
+2016-12-05 12:16:01 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:12 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:16:12 INFO  Called read 
+2016-12-05 12:16:12 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:13 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:16:13 INFO  Called read 
+2016-12-05 12:16:13 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:25 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:16:25 INFO  Called read 
+2016-12-05 12:16:25 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:33 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:16:33 INFO  Called read 
+2016-12-05 12:16:33 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:16:34 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 12:16:34 INFO  Called read 
+2016-12-05 12:16:34 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 12:16:34 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:21:04 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 12:21:04 INFO  Called read 
+2016-12-05 12:21:04 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 12:21:04 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:21:06 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:21:06 INFO  REQUEST: /img/favicon.jpeg ; BODY:{} 
+2016-12-05 12:21:38 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:21:38 INFO  Called read 
+2016-12-05 12:21:38 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:21:53 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 12:21:53 INFO  Called read 
+2016-12-05 12:21:53 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 12:21:53 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:22:08 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:22:08 INFO  Called read 
+2016-12-05 12:22:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:22:08 INFO  REQUEST: /dist1ab6d5edb4e86c09a598.hot-update.json ; BODY:{} 
+2016-12-05 12:22:13 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:22:13 INFO  Called read 
+2016-12-05 12:22:13 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:23:36 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:23:36 INFO  Called read 
+2016-12-05 12:23:36 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:23:36 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 12:23:36 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 12:23:49 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:23:49 INFO  Called read 
+2016-12-05 12:23:49 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:23:52 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:23:52 INFO  Called read 
+2016-12-05 12:23:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:23:54 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 12:23:54 INFO  Called read 
+2016-12-05 12:23:54 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 12:23:54 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 12:24:06 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 12:24:06 INFO  Called read 
+2016-12-05 12:24:06 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 12:24:08 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 12:24:08 INFO  Called read 
+2016-12-05 12:24:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:05:14 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:05:14 INFO  Called read 
+2016-12-05 13:05:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:06:39 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:06:39 INFO  Called read 
+2016-12-05 13:06:39 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:13:27 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:13:43 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:13:43 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:14:41 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:15:07 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:15:16 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:15:18 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:15:18 INFO  Called read 
+2016-12-05 13:15:18 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:20 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:15:20 INFO  Called read 
+2016-12-05 13:15:20 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:29 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:15:29 INFO  Called read 
+2016-12-05 13:15:29 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:32 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:15:32 INFO  Called read 
+2016-12-05 13:15:32 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:35 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:15:35 INFO  Called read 
+2016-12-05 13:15:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:37 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:15:37 INFO  Called read 
+2016-12-05 13:15:37 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:15:40 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:15:41 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:15:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:15:59 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:16:24 INFO  REQUEST: /distfeb4df82d86866ae05b7.hot-update.json ; BODY:{} 
+2016-12-05 13:18:22 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:18:22 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:18:30 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:18:30 INFO  Called read 
+2016-12-05 13:18:30 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:18:42 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 13:18:42 INFO  Called read 
+2016-12-05 13:18:42 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 13:18:42 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 13:18:59 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:18:59 INFO  Called read 
+2016-12-05 13:18:59 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:21:00 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:21:42 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:21:59 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:21:59 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:21:59 INFO  Called read 
+2016-12-05 13:21:59 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:22:01 INFO  REQUEST: /api/metadata/2016-9 ; BODY:{} 
+2016-12-05 13:22:01 INFO  Called read 
+2016-12-05 13:22:01 INFO  {"date_year":"\"2016\"","date":"\"9\""} 
+2016-12-05 13:22:01 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="9" 
+2016-12-05 13:24:14 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:25:47 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:26:11 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:26:32 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:27:18 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:28:45 INFO  REQUEST: /dist30b9c56c00ac7a540336.hot-update.json ; BODY:{} 
+2016-12-05 13:32:50 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:32:58 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:33:04 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:33:10 INFO  REQUEST: /dist/9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:33:18 INFO  REQUEST: /dist/hot-update.json ; BODY:{} 
+2016-12-05 13:33:22 INFO  REQUEST: /hot-update.json ; BODY:{} 
+2016-12-05 13:34:17 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:34:17 INFO  Called read 
+2016-12-05 13:34:17 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:34:24 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:34:24 INFO  Called read 
+2016-12-05 13:34:24 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:35:11 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:39:31 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:40:31 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:40:31 INFO  Called read 
+2016-12-05 13:40:31 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:40:31 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:40:32 INFO  REQUEST: /img/favicon.jpeg ; BODY:{} 
+2016-12-05 13:40:37 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:40:37 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:40:52 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:40:52 INFO  Called read 
+2016-12-05 13:40:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:40:55 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:40:55 INFO  Called read 
+2016-12-05 13:40:55 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:41:17 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:41:17 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:50:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:50:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:50:24 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:50:33 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:50:33 INFO  Called read 
+2016-12-05 13:50:33 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:50:33 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:51:01 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:51:01 INFO  Called read 
+2016-12-05 13:51:01 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:51:08 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:51:08 INFO  Called read 
+2016-12-05 13:51:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:51:17 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:51:17 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:51:19 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:51:19 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:51:35 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:51:35 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:51:51 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:51:51 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:51:59 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:52:05 INFO  REQUEST: /hot.9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:52:09 INFO  REQUEST: /hot/9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:52:13 INFO  REQUEST: /dist/9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:53:39 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:53:39 INFO  Called read 
+2016-12-05 13:53:39 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:53:41 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 13:53:41 INFO  Called read 
+2016-12-05 13:53:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:53:42 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 13:53:42 INFO  Called read 
+2016-12-05 13:53:42 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 13:55:32 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:55:36 INFO  REQUEST: /__webpack_hmr/9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:55:46 INFO  REQUEST: /__webpack_hmr9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 13:56:52 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:56:52 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:57:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 13:58:09 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 13:58:09 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 14:01:34 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:01:34 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:02:03 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:02:03 INFO  Called read 
+2016-12-05 14:02:03 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:02:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:02:24 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:02:24 INFO  Called read 
+2016-12-05 14:02:24 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:02:30 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 14:02:31 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:02:42 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 14:02:42 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:03:21 INFO  REQUEST: /dist9db650e2c0319c2d0e50.hot-update.json ; BODY:{} 
+2016-12-05 14:03:21 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:03:30 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:03:30 INFO  Called read 
+2016-12-05 14:03:30 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:05:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:03 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:04 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:05 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:05 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:05 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:07 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:08 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:09 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:09 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:10 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:10 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:12 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:12 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:12 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:13 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:13 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:14 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:15 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:15 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:17 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:17 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:17 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:18 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:18 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:18 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:20 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:20 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:20 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:21 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:21 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:21 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:23 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:23 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:23 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:25 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:25 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:26 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:26 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:26 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:28 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:28 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:28 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:29 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:29 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:30 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:31 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:31 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:31 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:33 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:33 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:33 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:34 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:34 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:34 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:36 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:36 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:36 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:37 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:37 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:38 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:39 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:39 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:40 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:41 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:41 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:41 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:43 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:43 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:43 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:44 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:44 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:44 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:46 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:46 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:46 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:47 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:47 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:47 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:48 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:48 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:49 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:50 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:50 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:50 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:51 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:51 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:52 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:53 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:53 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:53 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:54 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:54 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:55 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:56 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:56 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:56 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:05:58 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:05:59 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:05:59 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:06:00 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:06:01 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:06:01 INFO  Called read 
+2016-12-05 14:06:01 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:06:01 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:01 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:06:01 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:06:03 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:06:03 INFO  Called read 
+2016-12-05 14:06:03 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:06:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:03 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:06:04 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:06:05 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:06:05 INFO  Called read 
+2016-12-05 14:06:05 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:06:05 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:05 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:06:06 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:06:07 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:06:07 INFO  Called read 
+2016-12-05 14:06:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:06:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:06:08 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:06:31 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:40 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:06:40 INFO  Called read 
+2016-12-05 14:06:40 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:06:47 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:06:58 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:06:58 INFO  Called read 
+2016-12-05 14:06:58 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:07:16 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:07:16 INFO  Called read 
+2016-12-05 14:07:16 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:07:43 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:43 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:45 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:45 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:45 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:47 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:47 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:47 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:49 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:49 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:49 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:51 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:51 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:51 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:52 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:52 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:53 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:54 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:55 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:55 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:56 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:57 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:57 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:07:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:07:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:07:59 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:00 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:00 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:00 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:02 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:02 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:02 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:03 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:04 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:05 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:05 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:05 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:07 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:08 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:09 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:09 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:10 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:10 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:12 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:12 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:12 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:14 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:14 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:14 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:15 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:16 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:17 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:18 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:18 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:19 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:19 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:19 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:21 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:21 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:21 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:22 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:22 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:22 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:24 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:24 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:24 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:26 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:26 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:27 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:27 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:08:28 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:08:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:08:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:09:52 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:09:52 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:09:53 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:09:53 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:09:54 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:09:55 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:09:55 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:09:55 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:09:57 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:09:57 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:09:57 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:09:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:09:59 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:09:59 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:10:00 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:10:00 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:10:01 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:10:02 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:10:02 INFO  Called read 
+2016-12-05 14:10:02 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:10:02 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:10:02 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:10:02 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:10:04 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:10:04 INFO  Called read 
+2016-12-05 14:10:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:10:04 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:10:04 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:10:04 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:10:06 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:10:06 INFO  Called read 
+2016-12-05 14:10:06 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:10:06 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:10:06 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:10:06 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:13:19 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:13:56 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:14:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:14:35 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:16:46 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:17:01 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:17:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:17:26 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:17:45 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:04 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:14 INFO  Called read 
+2016-12-05 14:18:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:15 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:28 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:28 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:28 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:29 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:29 INFO  Called read 
+2016-12-05 14:18:29 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:29 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:29 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:30 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:32 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:32 INFO  Called read 
+2016-12-05 14:18:32 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:32 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:32 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:32 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:35 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:35 INFO  Called read 
+2016-12-05 14:18:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:35 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:35 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:37 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:37 INFO  Called read 
+2016-12-05 14:18:37 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:37 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:38 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:38 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:40 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:40 INFO  Called read 
+2016-12-05 14:18:40 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:40 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:40 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:40 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:42 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:42 INFO  Called read 
+2016-12-05 14:18:42 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:42 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:42 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:43 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:44 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:44 INFO  Called read 
+2016-12-05 14:18:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:45 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:45 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:45 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:47 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:47 INFO  Called read 
+2016-12-05 14:18:47 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:47 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:47 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:47 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:50 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:50 INFO  Called read 
+2016-12-05 14:18:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:50 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:50 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:50 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:52 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:52 INFO  Called read 
+2016-12-05 14:18:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:52 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:52 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:53 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:55 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:55 INFO  Called read 
+2016-12-05 14:18:55 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:55 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:55 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:55 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:18:58 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:18:58 INFO  Called read 
+2016-12-05 14:18:58 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:18:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:18:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:18:58 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:00 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:00 INFO  Called read 
+2016-12-05 14:19:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:01 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:01 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:01 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:04 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:04 INFO  Called read 
+2016-12-05 14:19:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:04 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:04 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:04 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:07 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:07 INFO  Called read 
+2016-12-05 14:19:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:07 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:09 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:09 INFO  Called read 
+2016-12-05 14:19:09 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:09 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:10 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:10 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:11 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:11 INFO  Called read 
+2016-12-05 14:19:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:12 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:12 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:12 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:14 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:14 INFO  Called read 
+2016-12-05 14:19:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:14 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:14 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:14 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:16 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:16 INFO  Called read 
+2016-12-05 14:19:16 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:17 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:17 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:17 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:19 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:19 INFO  Called read 
+2016-12-05 14:19:19 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:19 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:20 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:20 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:22 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:22 INFO  Called read 
+2016-12-05 14:19:22 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:23 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:23 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:23 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:25 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:25 INFO  Called read 
+2016-12-05 14:19:25 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:26 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:26 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:28 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:28 INFO  Called read 
+2016-12-05 14:19:28 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:28 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:28 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:28 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:31 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:31 INFO  Called read 
+2016-12-05 14:19:31 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:31 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:31 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:31 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:33 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:33 INFO  Called read 
+2016-12-05 14:19:33 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:33 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:33 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:34 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:36 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:36 INFO  Called read 
+2016-12-05 14:19:36 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:36 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:36 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:36 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:38 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:38 INFO  Called read 
+2016-12-05 14:19:38 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:38 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:39 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:39 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:41 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:41 INFO  Called read 
+2016-12-05 14:19:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:41 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:41 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:42 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:44 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:44 INFO  Called read 
+2016-12-05 14:19:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:44 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:44 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:45 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:47 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:47 INFO  Called read 
+2016-12-05 14:19:47 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:47 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:47 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:47 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:50 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:50 INFO  Called read 
+2016-12-05 14:19:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:50 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:50 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:50 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:52 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:52 INFO  Called read 
+2016-12-05 14:19:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:53 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:53 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:53 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:55 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:55 INFO  Called read 
+2016-12-05 14:19:55 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:55 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:55 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:55 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:19:58 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:19:58 INFO  Called read 
+2016-12-05 14:19:58 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:19:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:19:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:19:58 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:22:19 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:23:13 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:24:14 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:24:22 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:24:22 INFO  Called read 
+2016-12-05 14:24:22 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:24:22 INFO  REQUEST: /dist/105d39be19ee45ee7391.hot-update.json ; BODY:{} 
+2016-12-05 14:24:22 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:24:22 INFO  REQUEST: /dist/js/bundle.js ; BODY:{} 
+2016-12-05 14:25:25 INFO  REQUEST: /dist/bundle.js ; BODY:{} 
+2016-12-05 14:25:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:26:40 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:26:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:26:43 INFO  Called read 
+2016-12-05 14:26:43 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:26:43 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:26:43 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:30:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:30:42 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:31:08 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:31:51 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:31:51 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:32:28 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:32:28 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:32:28 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:32:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:32:59 INFO  Called read 
+2016-12-05 14:32:59 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:32:59 INFO  Called read 
+2016-12-05 14:32:59 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:33:00 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:33:00 INFO  Called read 
+2016-12-05 14:33:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:33:00 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:33:00 INFO  Called read 
+2016-12-05 14:33:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:33:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:33:03 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:33:06 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:33:06 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:33:06 INFO  REQUEST: /dist7ad7d830064361a323c4.hot-update.json ; BODY:{} 
+2016-12-05 14:34:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:34:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:34:40 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:34:52 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:35:20 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:35:20 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:35:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:36:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:36:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:37:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:37:15 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:37:27 INFO  REQUEST: / ; BODY:{} 
+2016-12-05 14:38:13 INFO  REQUEST: / ; BODY:{} 
+2016-12-05 14:38:45 INFO  REQUEST: /dist/bundle.js ; BODY:{} 
+2016-12-05 14:38:57 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:40:20 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:40:25 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:40:25 INFO  Called read 
+2016-12-05 14:40:25 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:40:25 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:40:26 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:42:36 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:42:36 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:43:01 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:43:01 INFO  Called read 
+2016-12-05 14:43:01 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:02 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:02 INFO  Called read 
+2016-12-05 14:44:02 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:02 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:02 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:02 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:44:04 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:04 INFO  Called read 
+2016-12-05 14:44:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:04 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:05 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:05 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:44:07 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:07 INFO  Called read 
+2016-12-05 14:44:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:08 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:44:10 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:10 INFO  Called read 
+2016-12-05 14:44:10 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:10 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:11 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:44:14 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:14 INFO  Called read 
+2016-12-05 14:44:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:14 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:14 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:15 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:44:17 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:44:17 INFO  Called read 
+2016-12-05 14:44:17 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:44:17 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:44:17 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:44:18 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:46:41 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:46:50 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:46:50 INFO  Called read 
+2016-12-05 14:46:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:46:55 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:47:51 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:47:51 INFO  Called read 
+2016-12-05 14:47:51 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:47:51 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:47:51 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:47:51 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:47:51 INFO  Called read 
+2016-12-05 14:47:51 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:47:53 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:47:53 INFO  Called read 
+2016-12-05 14:47:53 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:47:53 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:47:53 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:47:54 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:47:56 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:47:56 INFO  Called read 
+2016-12-05 14:47:56 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:47:56 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:47:56 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:47:56 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:47:58 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:47:58 INFO  Called read 
+2016-12-05 14:47:58 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:47:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:47:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:47:59 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:00 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:00 INFO  Called read 
+2016-12-05 14:48:00 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:01 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:01 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:01 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:02 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:02 INFO  Called read 
+2016-12-05 14:48:02 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:03 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:03 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:03 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:05 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:05 INFO  Called read 
+2016-12-05 14:48:05 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:05 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:05 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:05 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:07 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:07 INFO  Called read 
+2016-12-05 14:48:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:07 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:07 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:08 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:10 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:10 INFO  Called read 
+2016-12-05 14:48:10 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:11 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:11 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:13 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:48:13 INFO  Called read 
+2016-12-05 14:48:13 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:13 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:13 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:13 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:15 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:48:15 INFO  Called read 
+2016-12-05 14:48:15 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:16 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:16 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:34 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:48:34 INFO  Called read 
+2016-12-05 14:48:34 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:48:57 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:57 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:57 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:48:58 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:48:58 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:48:59 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:00 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:00 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:01 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:02 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:02 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:03 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:04 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:04 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:04 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:06 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:06 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:06 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:08 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:08 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:08 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:10 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:10 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:10 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:11 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:12 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:12 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:49:14 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:49:14 INFO  REQUEST: /distfb42ccfcce187165e5ea.hot-update.json ; BODY:{} 
+2016-12-05 14:49:14 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:21 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:21 INFO  Called read 
+2016-12-05 14:51:21 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:22 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:22 INFO  REQUEST: /img/favicon.jpeg ; BODY:{} 
+2016-12-05 14:51:33 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:35 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:35 INFO  Called read 
+2016-12-05 14:51:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:35 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:37 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:37 INFO  Called read 
+2016-12-05 14:51:37 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:37 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:37 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:39 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:39 INFO  Called read 
+2016-12-05 14:51:39 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:40 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:40 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:42 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:42 INFO  Called read 
+2016-12-05 14:51:42 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:42 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:42 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:44 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:44 INFO  Called read 
+2016-12-05 14:51:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:44 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:44 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:45 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:45 INFO  Called read 
+2016-12-05 14:51:45 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:46 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:46 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:51:47 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:51:47 INFO  Called read 
+2016-12-05 14:51:47 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:51:48 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:51:48 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:52:09 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:52:09 INFO  Called read 
+2016-12-05 14:52:09 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:52:09 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:52:09 INFO  Called read 
+2016-12-05 14:52:09 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:52:31 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:52:31 INFO  Called read 
+2016-12-05 14:52:31 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:52:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:03 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:53:03 INFO  Called read 
+2016-12-05 14:53:03 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:53:31 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:33 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:33 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:35 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:35 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:37 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:37 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:38 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:39 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:40 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:41 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:42 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:43 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:44 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:44 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:53:46 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:53:46 INFO  REQUEST: /dist950e7f23e9c89269a089.hot-update.json ; BODY:{} 
+2016-12-05 14:57:26 INFO  REQUEST: /__webpack_hmr ; BODY:{} 
+2016-12-05 14:57:39 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 14:57:39 INFO  Called read 
+2016-12-05 14:57:39 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 14:57:41 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 14:57:41 INFO  Called read 
+2016-12-05 14:57:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:00:20 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:00:20 INFO  Called read 
+2016-12-05 15:00:20 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:00:23 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:00:23 INFO  Called read 
+2016-12-05 15:00:23 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:03:32 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:03:32 INFO  Called read 
+2016-12-05 15:03:32 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:03:32 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:10:48 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:10:48 INFO  Called read 
+2016-12-05 15:10:48 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:10:48 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:12:39 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:12:39 INFO  Called read 
+2016-12-05 15:12:39 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:12:41 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:12:41 INFO  Called read 
+2016-12-05 15:12:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:12:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:12:43 INFO  Called read 
+2016-12-05 15:12:43 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:12:45 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:12:45 INFO  Called read 
+2016-12-05 15:12:45 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:12:45 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:12:47 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:12:47 INFO  Called read 
+2016-12-05 15:12:47 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:17:51 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:17:51 INFO  Called read 
+2016-12-05 15:17:51 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:17:54 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:17:54 INFO  Called read 
+2016-12-05 15:17:54 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:17:54 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:24:32 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:24:32 INFO  Called read 
+2016-12-05 15:24:32 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:24:32 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:29:57 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:29:57 INFO  Called read 
+2016-12-05 15:29:57 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:29:57 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:30:04 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:04 INFO  Called read 
+2016-12-05 15:30:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:07 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-05 15:30:07 INFO  Called read 
+2016-12-05 15:30:07 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-05 15:30:07 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-05 15:30:08 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:08 INFO  Called read 
+2016-12-05 15:30:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:10 INFO  REQUEST: /api/metadata/2016-9 ; BODY:{} 
+2016-12-05 15:30:10 INFO  Called read 
+2016-12-05 15:30:10 INFO  {"date_year":"\"2016\"","date":"\"9\""} 
+2016-12-05 15:30:10 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="9" 
+2016-12-05 15:30:12 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:12 INFO  Called read 
+2016-12-05 15:30:12 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:13 INFO  REQUEST: /api/metadata/2016-9 ; BODY:{} 
+2016-12-05 15:30:13 INFO  Called read 
+2016-12-05 15:30:13 INFO  {"date_year":"\"2016\"","date":"\"9\""} 
+2016-12-05 15:30:13 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="9" 
+2016-12-05 15:30:17 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:17 INFO  Called read 
+2016-12-05 15:30:17 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:21 INFO  REQUEST: /api/metadata/2014-3 ; BODY:{} 
+2016-12-05 15:30:21 INFO  Called read 
+2016-12-05 15:30:21 INFO  {"date_year":"\"2014\"","date":"\"3\""} 
+2016-12-05 15:30:21 INFO  SELECT * FROM accounting_log WHERE date_year="2014" AND date="3" 
+2016-12-05 15:30:25 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:25 INFO  Called read 
+2016-12-05 15:30:25 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:35 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:35 INFO  Called read 
+2016-12-05 15:30:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:37 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:30:37 INFO  Called read 
+2016-12-05 15:30:37 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:30:37 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:30:45 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:30:45 INFO  Called read 
+2016-12-05 15:30:45 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:30:50 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:30:50 INFO  Called read 
+2016-12-05 15:30:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:34:41 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:34:41 INFO  Called read 
+2016-12-05 15:34:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:35:11 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:35:11 INFO  Called read 
+2016-12-05 15:35:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:35:34 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:35:34 INFO  Called read 
+2016-12-05 15:35:34 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:41:38 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:41:38 INFO  Called read 
+2016-12-05 15:41:38 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:44:31 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:44:31 INFO  Called read 
+2016-12-05 15:44:31 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:48:11 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:48:11 INFO  Called read 
+2016-12-05 15:48:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:48:17 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:48:17 INFO  Called read 
+2016-12-05 15:48:17 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:48:17 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:48:30 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:48:30 INFO  Called read 
+2016-12-05 15:48:30 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:48:32 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 15:48:32 INFO  Called read 
+2016-12-05 15:48:32 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:51:52 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:51:52 INFO  Called read 
+2016-12-05 15:51:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 15:51:54 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:51:54 INFO  Called read 
+2016-12-05 15:51:54 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:51:54 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:54:43 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:54:43 INFO  Called read 
+2016-12-05 15:54:43 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:54:43 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:54:43 INFO  REQUEST: /api/DeleteLog ; BODY:{"id":576} 
+2016-12-05 15:54:43 INFO  Called remove 
+2016-12-05 15:54:43 INFO  {"id":576} 
+2016-12-05 15:54:43 INFO  DELETE FROM accounting_log WHERE id=576 
+2016-12-05 15:54:43 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 15:54:43 INFO  Called read 
+2016-12-05 15:54:43 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 15:54:43 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 15:58:42 INFO  REQUEST: /api/AddLog ; BODY:{"type":2,"amount":1965.47,"description":"11 月份打车吃饭","date_year":"2016","date":"11"} 
+2016-12-05 15:58:42 INFO  Called save 
+2016-12-05 15:58:42 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (2, 1965.47, "11 月份打车吃饭", "2016", "11") 
+2016-12-05 15:58:44 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 15:58:44 INFO  Called read 
+2016-12-05 15:58:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:00:44 INFO  REQUEST: /api/AddLog ; BODY:{"type":1,"amount":637.26,"description":"12 月 1 - 5 号打车吃饭","date_year":"2016","date":"12"} 
+2016-12-05 16:00:44 INFO  Called save 
+2016-12-05 16:00:44 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (1, 637.26, "12 月 1 - 5 号打车吃饭", "2016", "12") 
+2016-12-05 16:01:05 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:01:05 INFO  Called read 
+2016-12-05 16:01:05 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:01:18 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 16:01:18 INFO  Called read 
+2016-12-05 16:01:18 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:01:36 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:01:36 INFO  Called read 
+2016-12-05 16:01:36 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:02 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:02 INFO  Called read 
+2016-12-05 16:03:02 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:07 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 16:03:07 INFO  Called read 
+2016-12-05 16:03:07 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 16:03:07 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 16:03:12 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:12 INFO  Called read 
+2016-12-05 16:03:12 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:23 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:23 INFO  Called read 
+2016-12-05 16:03:23 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:24 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 16:03:24 INFO  Called read 
+2016-12-05 16:03:24 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:24 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:24 INFO  Called read 
+2016-12-05 16:03:24 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:26 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 16:03:26 INFO  Called read 
+2016-12-05 16:03:26 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 16:03:26 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 16:03:28 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:28 INFO  Called read 
+2016-12-05 16:03:28 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:29 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 16:03:29 INFO  Called read 
+2016-12-05 16:03:29 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 16:03:29 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 16:03:45 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:03:45 INFO  Called read 
+2016-12-05 16:03:45 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:03:47 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-05 16:03:47 INFO  Called read 
+2016-12-05 16:03:47 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-05 16:03:47 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-05 16:08:21 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-05 16:08:21 INFO  Called read 
+2016-12-05 16:08:21 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-05 16:08:21 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-05 16:08:27 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:08:27 INFO  Called read 
+2016-12-05 16:08:27 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:08:41 INFO  REQUEST: /api/metadata/2014-3 ; BODY:{} 
+2016-12-05 16:08:41 INFO  Called read 
+2016-12-05 16:08:41 INFO  {"date_year":"\"2014\"","date":"\"3\""} 
+2016-12-05 16:08:41 INFO  SELECT * FROM accounting_log WHERE date_year="2014" AND date="3" 
+2016-12-05 16:08:44 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:08:44 INFO  Called read 
+2016-12-05 16:08:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:08:46 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 16:08:46 INFO  Called read 
+2016-12-05 16:08:46 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 16:08:46 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 16:08:48 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:08:48 INFO  Called read 
+2016-12-05 16:08:48 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:08:49 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 16:08:49 INFO  Called read 
+2016-12-05 16:08:49 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 16:08:49 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 16:08:59 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:08:59 INFO  Called read 
+2016-12-05 16:08:59 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:01 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-05 16:09:01 INFO  Called read 
+2016-12-05 16:09:01 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-05 16:09:01 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-05 16:09:04 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:04 INFO  Called read 
+2016-12-05 16:09:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:05 INFO  REQUEST: /api/metadata/2016-9 ; BODY:{} 
+2016-12-05 16:09:05 INFO  Called read 
+2016-12-05 16:09:05 INFO  {"date_year":"\"2016\"","date":"\"9\""} 
+2016-12-05 16:09:05 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="9" 
+2016-12-05 16:09:09 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:09 INFO  Called read 
+2016-12-05 16:09:09 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:10 INFO  REQUEST: /api/metadata/2016-7 ; BODY:{} 
+2016-12-05 16:09:10 INFO  Called read 
+2016-12-05 16:09:10 INFO  {"date_year":"\"2016\"","date":"\"7\""} 
+2016-12-05 16:09:10 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="7" 
+2016-12-05 16:09:12 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:12 INFO  Called read 
+2016-12-05 16:09:12 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:13 INFO  REQUEST: /api/metadata/2016-6 ; BODY:{} 
+2016-12-05 16:09:13 INFO  Called read 
+2016-12-05 16:09:13 INFO  {"date_year":"\"2016\"","date":"\"6\""} 
+2016-12-05 16:09:13 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="6" 
+2016-12-05 16:09:16 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:16 INFO  Called read 
+2016-12-05 16:09:16 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:17 INFO  REQUEST: /api/metadata/2016-5 ; BODY:{} 
+2016-12-05 16:09:17 INFO  Called read 
+2016-12-05 16:09:17 INFO  {"date_year":"\"2016\"","date":"\"5\""} 
+2016-12-05 16:09:17 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="5" 
+2016-12-05 16:09:21 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:21 INFO  Called read 
+2016-12-05 16:09:21 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:24 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-05 16:09:24 INFO  Called read 
+2016-12-05 16:09:24 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-05 16:09:24 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-05 16:09:27 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:27 INFO  Called read 
+2016-12-05 16:09:27 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:28 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 16:09:28 INFO  Called read 
+2016-12-05 16:09:28 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 16:09:28 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 16:09:32 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:32 INFO  Called read 
+2016-12-05 16:09:32 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:09:33 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 16:09:33 INFO  Called read 
+2016-12-05 16:09:33 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 16:09:33 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 16:09:34 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:09:34 INFO  Called read 
+2016-12-05 16:09:34 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:10:36 INFO  REQUEST: /api/AddLog ; BODY:{"type":2,"amount":300,"description":"海底捞发红包","date_year":"2016","date":"12"} 
+2016-12-05 16:10:36 INFO  Called save 
+2016-12-05 16:10:36 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (2, 300, "海底捞发红包", "2016", "12") 
+2016-12-05 16:11:09 INFO  REQUEST: /api/AddLog ; BODY:{"type":1,"amount":792,"description":"11 月份打车票报销","date_year":"2016","date":"11"} 
+2016-12-05 16:11:09 INFO  Called save 
+2016-12-05 16:11:09 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (1, 792, "11 月份打车票报销", "2016", "11") 
+2016-12-05 16:11:10 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:11:10 INFO  Called read 
+2016-12-05 16:11:10 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:11:12 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-05 16:11:12 INFO  Called read 
+2016-12-05 16:11:12 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-05 16:11:12 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-05 16:11:17 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:11:17 INFO  Called read 
+2016-12-05 16:11:17 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:11:18 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 16:11:18 INFO  Called read 
+2016-12-05 16:11:18 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 16:11:18 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 16:11:22 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:11:22 INFO  Called read 
+2016-12-05 16:11:22 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:12:14 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 16:12:14 INFO  Called read 
+2016-12-05 16:12:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:16:11 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:16:11 INFO  Called read 
+2016-12-05 16:16:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 

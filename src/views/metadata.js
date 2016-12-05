@@ -41,7 +41,7 @@ class Metadata extends Component {
         rows.push(listReverse.splice(x, 4))
       }
       return rows.map((eachRow) => {
-        return <Row>{eachRow.map((eachCol) => {
+        return <Row type="flex" justify="space-around" align="middle" gutter={16}>{eachRow.map((eachCol) => {
           return <MetaDataCard data={eachCol} />
         })}</Row>
       })
@@ -55,19 +55,19 @@ class Metadata extends Component {
   }
 
   render() {
-    return <Spin tip="加载中..." spinning={this.state.isLoading} >
+    return <Col span={22}><Spin tip="加载中..." spinning={this.state.isLoading} >
       <h2>
-        This is Meta Data List
+        Meta Data List
       </h2>
       {this.renderCards()}
-    </Spin>
+    </Spin></Col>
   }
 }
 
 const MetaDataCard = (props) => {
   let {month, shouru, zhichu} = props.data
-  return <Col span="6">
-    <Card title={month} extra={<Link to={`metadata/${month}`}>查看详情</Link>} style={{ width: 300 }}>
+  return <Col span={5} style={{marginTop: 20}}>
+    <Card title={month} extra={<Link to={`metadata/${month}`}>查看详情</Link>}>
       <h3>当月收入：{shouru}</h3>
       <h3>当月支出：{zhichu}</h3>
     </Card>

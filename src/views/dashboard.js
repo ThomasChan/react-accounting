@@ -2,7 +2,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Chart from 'rc-echarts'
-import { Spin } from 'antd'
+import { Spin, Col } from 'antd'
 
 import { getData } from '../utils'
 
@@ -68,12 +68,12 @@ class Dashboard extends Component {
   }
 
   render() {
-    return <Spin tip="加载中..." spinning={this.state.isLoading} >
+    return <Col span={22}><Spin tip="加载中..." spinning={this.state.isLoading} >
       <h2>
-        This is Dashboard
+        Dashboard
       </h2>
       {!this.state.isLoading && this.renderChart()}
-    </Spin>
+    </Spin></Col>
   }
 }
 

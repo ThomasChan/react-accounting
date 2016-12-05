@@ -6,6 +6,8 @@ import { Row, Col } from 'antd'
 
 import Header from './header'
 
+import './app.less'
+
 class App extends Component {
   
   constructor(props) {
@@ -20,7 +22,9 @@ class App extends Component {
       </Row>
       <div className="ant-layout-wrapper">
         <div className="ant-layout-container">
-          {this.props.children}
+          <Row type="flex" justify="space-around" align="middle" gutter={20}>
+            {this.props.children}
+          </Row>
         </div>
       </div>
     </div>

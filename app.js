@@ -8,7 +8,7 @@ const routes = require('./server/routes')
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-app.use(express.static('.'))
+app.use(express.static('./dist/'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
@@ -18,18 +18,15 @@ const routerLogger = function(req, res, next) {
 }
 app.use(routerLogger)
 
-const webpack = require('webpack');
-const webpackConfig = require('./webpack.config');
-// Webpack developer
-if (webpackConfig) {
-  const compiler = webpack(webpackConfig);
-  app.use(require('webpack-dev-middleware')(compiler, {
-    publicPath: '/dist',
-    noInfo: true
-  }));
-
-  app.use(require('webpack-hot-middleware')(compiler));
-}
+// const webpack = require('webpack');
+// const webpackConfig = require('./webpack.config');
+// // Webpack developer
+// const compiler = webpack(webpackConfig);
+// app.use(require('webpack-dev-middleware')(compiler, {
+//   publicPath: webpackConfig.output.publicPath,
+//   noInfo: true
+// }));
+// app.use(require('webpack-hot-middleware')(compiler));
 
 
 
@@ -47,6 +44,6 @@ app.post('/api/UpdateLog', routes.UpdateLog)
 app.post('/api/DeleteLog', routes.DeleteLog)
 
 
-app.listen(8001, 'react.accounting.com', function() {
-	console.log('listening at react.accounting.com')
+app.listen(8081, 'react.accounting.com', function() {
+	console.log('listening at react.accounting.com:8081')
 })

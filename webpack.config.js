@@ -4,12 +4,12 @@ var webpack = require('webpack')
 module.exports = {
 	devtool: 'inline-eval-cheap-source-map',
 	entry: [
-    	'webpack-hot-middleware/client',
+    	// 'webpack-hot-middleware/client',
 		'babel-polyfill',
 		'./src/index.js'
 	],
 	output: {
-		path: path.join(__dirname, 'dist/js/'),
+		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js',
 		publicPath: '/dist'
 	},
@@ -40,25 +40,25 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),
-    	new webpack.HotModuleReplacementPlugin(),
-		// new webpack.optimize.UglifyJsPlugin({
-  //           compressor: {
-  //               warnings: false,
-  //               sequences: true,
-  //               dead_code: true,
-  //               conditionals: true,
-  //               booleans: true,
-  //               unused: true,
-  //               if_return: true,
-  //               join_vars: true
-  //               ,drop_console: true
-  //           },
-  //           sourceMap: false,
-  //           mangle: false,
-  //           output: {
-  //               comments: false
-  //           }
-  //       }),
+    	// new webpack.HotModuleReplacementPlugin(),
+		new webpack.optimize.UglifyJsPlugin({
+            compressor: {
+                warnings: false,
+                sequences: true,
+                dead_code: true,
+                conditionals: true,
+                booleans: true,
+                unused: true,
+                if_return: true,
+                join_vars: true
+                ,drop_console: true
+            },
+            sourceMap: false,
+            mangle: false,
+            output: {
+                comments: false
+            }
+        }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')
