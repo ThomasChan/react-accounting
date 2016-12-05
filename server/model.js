@@ -32,18 +32,18 @@ Model.prototype.read = function(select, column, value, orderBy, next) {
 	var _sql = ['SELECT ', select, ' FROM ', _this._table]
 	if (column && value && column.length && value.length) {
 		var _where = ArrayToString.call(this, column, value).join(' AND ')
-		_sql.concat([' WHERE ', _where])
+		_sql = _sql.concat([' WHERE ', _where])
 	}
-	if (typeof orderBy === 'string') {
-		orderBy = [orderBy]
-	}
-	orderBy.forEach(function(order) {
-		if (_this._columns.indexOf(order.split(' ')[0]) === -1) {
-			throw new Error('Ordered column `' + order + '` is not defined in table `' + _this._table + '`')
-		}
-	})
 	if (orderBy.length) {
-		_sql.concat([' ORDERBY ', orderBy.join(', ')])
+		if (typeof orderBy === 'string') {
+			orderBy = [orderBy]
+		}
+		orderBy.forEach(function(order) {
+			if (_this._columns.indexOf(order.split(' ')[0]) === -1) {
+				throw new Error('Ordered column `' + order + '` is not defined in table `' + _this._table + '`')
+			}
+		})
+		_sql = _sql.concat([' ORDER BY ', orderBy.join(', ')])
 	}
 	var _sql_str = _sql.join('')
 	logger.info(_sql_str)

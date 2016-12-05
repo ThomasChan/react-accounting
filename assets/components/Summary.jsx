@@ -9,8 +9,12 @@ export default class Summary extends Component {
 		this.state = this.genData(props.data)
 	}
 
+	componentDidMount() {
+	}
+
 	componentWillReceiveProps(nextProps) {
 		this.setState(this.genData(nextProps.data))
+		console.log('componentWillReceiveProps', this.state)
 	}
 
 	genData(data) {
@@ -26,17 +30,28 @@ export default class Summary extends Component {
     }
 
 	render() {
-		return <table className="table table-striped table-hover">
-			<thead><tr><th>毛收入</th><th>总支出</th><th>月均支出</th><th>账户余额</th></tr></thead>
-			<tbody>
-				<tr>
-					<td><span style={_style}>{this.state.shouru[0]}</span>.{this.state.shouru[1]}</td>
-					<td><span style={_style}>{this.state.zhichu[0]}</span>.{this.state.zhichu[1]}</td>
-					<td><span style={_style}>{this.state.ave[0]}</span>.{this.state.ave[1]}</td>
-					<td><span style={_style}>{this.state.rem[0]}</span>.{this.state.rem[1]}</td>
-				</tr>
-			</tbody>
-		</table>
+		return <div className="tile is-parent">
+			<article className="tile is-child notification is-primary">
+				<nav className="level is-info">
+					<div className="level-item has-text-centered is-primary">
+						<p className="heading">毛收入</p>
+						<p className="title"><span className="subtitle is-4">{this.state.shouru[0]}</span>.<span className="subtitle is-6">{this.state.shouru[1]}</span></p>
+					</div>
+					<div className="level-item has-text-centered is-info">
+						<p className="heading">总支出</p>
+						<p className="title"><span className="subtitle is-4">{this.state.zhichu[0]}</span>.<span className="subtitle is-6">{this.state.zhichu[1]}</span></p>
+					</div>
+					<div className="level-item has-text-centered is-success">
+						<p className="heading">月均支出</p>
+						<p className="title"><span className="subtitle is-4">{this.state.ave[0]}</span>.<span className="subtitle is-6">{this.state.ave[1]}</span></p>
+					</div>
+					<div className="level-item has-text-centered is-danger">
+						<p className="heading">账户余额</p>
+						<p className="title"><span className="subtitle is-4">{this.state.rem[0]}</span>.<span className="subtitle is-6">{this.state.rem[1]}</span></p>
+					</div>
+				</nav>
+			</article>
+		</div>
 	}
 
 }

@@ -32,7 +32,7 @@ export default class ChartsDatas extends Component {
                 show : true,
                 feature : {
                     dataView : {show: true, readOnly: false},
-                    magicType : {show: true, type: ['line', 'bar']},
+                    magicType : {show: true, type: ['line', 'bar', 'pie', 'cloud', 'map', 'graph']},
                     restore : {show: true},
                     saveAsImage : {show: true}
                 }
@@ -53,8 +53,8 @@ export default class ChartsDatas extends Component {
         }
 
         return <Chart {...options}>
-            <Chart.Bar name="收入" data={this.props.data.shouru} showAllSymbol={true} smooth={true}/>
-            <Chart.Bar name="支出" data={this.props.data.zhichu} showAllSymbol={true} smooth={true}/>
+            <Chart.Line name="收入" data={this.props.data.shouru} showAllSymbol={true} smooth={true}/>
+            <Chart.Line name="支出" data={this.props.data.zhichu} showAllSymbol={true} smooth={true}/>
         </Chart>
 	}
 

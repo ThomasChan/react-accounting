@@ -1,53 +1,51 @@
-.card{
-	width:342px;
-	height:270px;
-	border:none
-}
-.card-image img{
-	width: 124px;
-	margin-top: 10px;
-}
-.card-image,
-.card-header,
-.card-footer{text-align: center}
-.load-data-loading{
+
+.loading-fixed {
 	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,.1);
+	top: 0;left: 0;right: 0;bottom: 0;
+	z-index: 999999;
+	background: #eee;
 }
-.card,
-.load-data-loading .loading{
-	position: absolute;
+.nav-item-block {
+	position: fixed;
+	bottom: 30px;
 	left:0;
-	top:0;
 	right:0;
-	bottom:0;
-	margin:auto;
+	margin: auto;
+	height: 350px;
+	width: 1280px;
+	overflow: scroll;
+	display: none!important;
 }
-.modal-temp{
+.is-block-active {
+	display: block!important;
+}
+.details-placeholder {
+	height: 350px;
+}
+.columns-overflow {
+	overflow: scroll;
+}
+.index-tabs {
 	position: absolute;
-	right:1rem;
-	top:5rem;
-	z-index:999;
+	display: none;
+	width: 100%;
 }
-.btn-submit{
-	color:#61dafb;
-	border-color:#61dafb;
+.index-tabs-active {
+	display: block;
 }
-.btn-submit:hover{
-	border-color:#61dafb;
-	background: #61dafb;
-	color:#fff;
+.detail-li {
+	margin: 4px 0;
+	line-height: 3;
 }
-.btn-delete{
-	color:red;
-	border-color:red;
+.detail-li:hover {
+	background: #fff;
 }
-.btn-delete:hover{
-	border-color:red;
-	background: red;
-	color:#fff;
+.detail-li span {
+	display: inline-block;
+	width: 160px!important;
+	line-height: 2.3;
+	vertical-align: middle;
 }
-.detail-update-btn{visibility: hidden}
-.detail-li:hover .detail-update-btn{visibility: visible;}
+.detail-li span.button {
+	width: 110px!important;
+}

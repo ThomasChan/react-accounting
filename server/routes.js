@@ -7,10 +7,138 @@ exports.Login = function(req, res) {
 	res.status(200).json({}).end()
 }
 
+exports.Dashboard = function(req, res) {
+	try {
+		new model('Log').read('*', [], [], ['date_year asc', 'date asc', 'type asc'], function(resLog) {
+			var shouru = [], zhichu = [], month = [], tmpData = {}
+			if (resLog.length) {
+				resLog.forEach((row, index) => {
+					if (row) {
+						var _month = row.date_year + '-' + row.date
+						tmpData[_month] = tmpData[_month] || {}
+						if (row.type == 1) {
+							tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
+						}
+						if (row.type == 2) {
+							tmpData[_month].zhichu = (tmpData[_month].zhichu || 0) + Number(row.amount)
+						}
+					}
+				})
+				Object.keys(tmpData).map((key) => {
+					if (!tmpData[key].shouru) {
+						tmpData[key].shouru = 0
+					}
+					if (!tmpData[key].zhichu) {
+						tmpData[key].zhichu = 0
+					}
+					month.push(key)
+					shouru.push(Number(tmpData[key].shouru.toFixed(2)))
+					zhichu.push(Number(tmpData[key].zhichu.toFixed(2)))
+				})
+			}
+			res.status(200).json({
+				shouru: shouru,
+				zhichu: zhichu,
+				month: month
+			}).end()
+		})
+	} catch (Exception) {
+		console.log(Exception)
+		logger.error(Exception)
+		res.status(500).json({
+			error: Exception
+		}).end()
+	}
+}
+
+exports.MetaData = function(req, res) {
+	try {
+		new model('Log').read('*', [], [], ['date_year asc', 'date asc', 'type asc'], function(resLog) {
+			var list = [], tmpData = {}
+			if (resLog.length) {
+				resLog.forEach((row, index) => {
+					if (row) {
+						var _month = row.date_year + '-' + row.date
+						tmpData[_month] = tmpData[_month] || {}
+						if (row.type == 1) {
+							tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
+						}
+						if (row.type == 2) {
+							tmpData[_month].zhichu = (tmpData[_month].zhichu || 0) + Number(row.amount)
+						}
+					}
+				})
+				Object.keys(tmpData).map((key) => {
+					if (!tmpData[key].shouru) {
+						tmpData[key].shouru = 0
+					}
+					if (!tmpData[key].zhichu) {
+						tmpData[key].zhichu = 0
+					}
+					list.push({
+						month: key,
+						shouru: Number(tmpData[key].shouru.toFixed(2)),
+						zhichu: Number(tmpData[key].zhichu.toFixed(2))
+					})
+				})
+			}
+			res.status(200).json({
+				list: list
+			}).end()
+		})
+	} catch (Exception) {
+		console.log(Exception)
+		logger.error(Exception)
+		res.status(500).json({
+			error: Exception
+		}).end()
+	}
+}
+
+exports.Month = function(req, res) {
+	try {
+		var param = req.params.month.split('-')
+		var year = param[0]
+		var month = param[1]
+		new model('Log').read('*', ['date_year', 'date'], [year, month], [], function(resLog) {
+			var totalShouru = 0, totalZhichu = 0
+			if (resLog.length) {
+				resLog.forEach((row, index) => {
+					if (row.type == 1) {
+						totalShouru += Number(row.amount)
+					}
+					if (row.type == 2) {
+						totalZhichu += Number(row.amount)
+					}
+				})
+			}
+			res.status(200).json({
+				totalShouru: totalShouru,
+				totalZhichu: totalZhichu,
+				details: resLog
+			}).end()
+		})
+	} catch (Exception) {
+		console.log(Exception)
+		logger.error(Exception)
+		res.status(500).json({
+			error: Exception
+		}).end()
+	}
+}
+
+
+
+
+
+
+
+
+
 exports.GetHomeData = function(req, res) {
 	try {
-		new model('Log').read('*', null, null, ['date_year asc', 'date asc', 'type asc'], function(resLog) {
-			new model('LogSpec').read('*', null, null, 'date asc', function(resLogSpec) {
+		new model('Log').read('*', [], [], ['date_year asc', 'date asc', 'type asc'], function(resLog) {
+			new model('LogSpec').read('*', [], [], 'date asc', function(resLogSpec) {
 				res.status(200).json({
 					log: resLog,
 					logSpec: resLogSpec

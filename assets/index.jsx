@@ -2,6 +2,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Request from 'superagent'
+import classnames from 'classnames'
 
 import { getAllDatas } from './components/Actions.jsx'
 import Store from './components/Reducer.jsx'
@@ -29,7 +30,10 @@ class App extends Component {
 	componentDidMount() {
 		console.time('App componentDidMount()')
 		Store.subscribe(() => {
-			this.setState(this.initGenData())
+			let newState = this.initGenData()
+			newState.chartActive = this.state.chartActive
+			newState.detailActive = this.state.detailActive
+			this.setState(newState)
 		})
 		console.timeEnd('App componentDidMount()')
 	}
@@ -43,44 +47,74 @@ class App extends Component {
 		newState.logSpec = this.parseLogSpecData(initData.logSpec)
 		newState.pending = initData.pending
 		newState.addPending = initData.addPending
+		newState.chartActive = true
+		newState.detailActive = false
 		return newState
 	}
 
 	render() {
-		let height = Math.ceil(window.innerHeight / 4) * 3
+		let height = 400//Math.ceil(window.innerHeight / 4) * 3
 		this.state.log.chartsData.height = height
+		let ChartsClass = classnames({
+			'is-active': this.state.chartActive
+		})
+		let DetailsClass = classnames({
+			'is-active': this.state.detailActive
+		})
+		let ChartsTab = classnames({
+			'index-tabs': true,
+			'index-tabs-active': this.state.chartActive
+		})
+		let DetailsTab = classnames({
+			'index-tabs': true,
+			'index-tabs-active': this.state.detailActive
+		})
 		return <div>
-		{!this.state.loginStatus ?
-			<LoginPage pending={this.state.loginPending} />
-		:
-			<div>
-				{this.state.pending ? <div className="load-data-loading"><div className="loading"></div></div> : null}
-				<div className="container">
-					<div className="columns">
-						<div className="column col-12">
-							<ChartsDatas pending={this.state.pending} data={this.state.log.chartsData} />
-						</div>
-					</div>
-					<div className="columns">
-						<div className="column col-3">
-							<h6>老婆的钱</h6>
-							<LogSpecDetail data={this.state.logSpec} />
-						</div>
-						<div className="column col-5">
-							<h6>明细</h6>
-							<DetailLists data={this.state.log.detailsData} />
-						</div>
-						<div className="column col-4">
-							<h6>汇总</h6>
-							<Summary data={this.state.log.sum} />
+			{!this.state.loginStatus ?
+				<LoginPage pending={this.state.loginPending} />
+			:
+				<div>
+					<Summary data={this.state.log.sum} />
+					<div className="tile is-parent">
+						<article className="tile is-child notification">
+	        				<p className="title">Add new record</p>
 							<FormOptions pending={this.state.pending} />
+						</article>
+					</div>
+					<nav className="tabs">
+						<ul>
+							<li className={ChartsClass} onClick={this._selectTab.bind(this, 'chartActive')}><a>Charts</a></li>
+							<li className={DetailsClass} onClick={this._selectTab.bind(this, 'detailActive')}><a>Details</a></li>
+						</ul>
+					</nav>
+					<div className={ChartsTab}>
+						<ChartsDatas pending={this.state.pending} data={this.state.log.chartsData} />
+					</div>
+					<div className={DetailsTab}>
+						<div className="columns columns-overflow">
+							<div className="column">
+								<DetailLists data={this.state.log.detailsData} />
+							</div>
 						</div>
+						<div className="details-placeholder"></div>
 					</div>
 				</div>
-			</div>
-		}
+			}
 		</div>
 		
+	}
+
+	_selectTab(which, e) {
+		let newState = this.state
+		newState[which] = !newState[which]
+		let another = which == 'chartActive' ? 'detailActive' : 'chartActive'
+		newState[another] = !newState[another]
+		Object.keys(newState.log.sum).map((name) => {
+			newState.log.sum[name] = Number(newState.log.sum[name].join('.').replace(/,/g, ''))
+			console.log(name, newState.log.sum[name])
+		})
+		console.log('clicked', this.state, this.state.log.sum)
+		this.setState(newState)
 	}
 
 	myOrderBy(prev, next) {
@@ -149,9 +183,12 @@ class App extends Component {
 				row.key = index
 				let _date = row.date_year + '-' + row.date
 				if (!resData.detailsData[_date]) {
-					resData.detailsData[_date] = []
+					resData.detailsData[_date] = {
+						active: false,
+						rows: []
+					}
 				}
-				resData.detailsData[_date].push(row)
+				resData.detailsData[_date].rows.push(row)
 			}
 		})
 		console.time('App parseAllData()')
@@ -225,3 +262,13 @@ class App extends Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))
+
+
+
+						// <div className="column col-3">
+						// 	<h6>老婆的钱</h6>
+						// 	<LogSpecDetail data={this.state.logSpec} />
+						// </div>
+
+					// {this.state.pending ? <div className="level-item loading-fixed"><div className="is-loading"></div></div> : null}
+// 

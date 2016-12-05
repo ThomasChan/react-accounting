@@ -1,20 +1,43 @@
 
-var config = require('./server/config')
-var logger = require('./server/logger')
-var routes = require('./server/routes')
+require('babel-register')
 
-var express = require('express')
-var bodyParser = require('body-parser')
-var app = express()
-app.use(express.static('dist'))
+const config = require('./server/config')
+const logger = require('./server/logger')
+const routes = require('./server/routes')
+
+const express = require('express')
+const bodyParser = require('body-parser')
+const app = express()
+app.use(express.static('.'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
-var routerLogger = function(req, res, next) {
+const routerLogger = function(req, res, next) {
 	logger.info('REQUEST: ', req.url, ' ; BODY:', JSON.stringify(req.body))
 	next()
 }
 app.use(routerLogger)
+
+const webpack = require('webpack');
+const webpackConfig = require('./webpack.config');
+// Webpack developer
+if (webpackConfig) {
+  const compiler = webpack(webpackConfig);
+  app.use(require('webpack-dev-middleware')(compiler, {
+    publicPath: '/dist',
+    noInfo: true
+  }));
+
+  app.use(require('webpack-hot-middleware')(compiler));
+}
+
+
+
+app.get('/api/dashboard', routes.Dashboard)
+app.get('/api/metadata', routes.MetaData)
+app.get('/api/metadata/:month', routes.Month)
+
+
 
 app.post('/api/Login', routes.Login)
 app.get('/api/GetHomeData', routes.GetHomeData)

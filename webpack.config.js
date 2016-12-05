@@ -1,20 +1,38 @@
+var path = require('path');
 var webpack = require('webpack')
 
 module.exports = {
 	devtool: 'inline-eval-cheap-source-map',
-	entry: './assets/index.jsx',
+	entry: [
+    	'webpack-hot-middleware/client',
+		'babel-polyfill',
+		'./src/index.js'
+	],
 	output: {
-		path: './dist/js/',
-		filename: 'bundle.js'
+		path: path.join(__dirname, 'dist/js/'),
+		filename: 'bundle.js',
+		publicPath: '/dist'
 	},
 	module: {
 		loaders: [
+		    {
+		      test: /\.css?$/,
+		      loaders : [
+		        'style-loader',
+		        'css-loader'
+		      ]
+		    },
+		    {
+		      test: /\.less?$/,
+		      loaders : [
+		        'style-loader',
+		        'css-loader',
+		        'less-loader?{"sourceMap":true}'
+		      ],
+		      include: __dirname
+		    },
 			{
-				test: /\.css$/,
-				loader: 'style!css'
-			},
-			{
-				test: /\.jsx?$/,
+				test: /\.js?$/,
 				exclude: /node-modules/,
 				loaders: ['babel?compact=false']
 			}
@@ -22,24 +40,25 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),
-		new webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false,
-                sequences: true,
-                dead_code: true,
-                conditionals: true,
-                booleans: true,
-                unused: true,
-                if_return: true,
-                join_vars: true
-                ,drop_console: true
-            },
-            sourceMap: false,
-            // mangle: false,
-            output: {
-                comments: false
-            }
-        }),
+    	new webpack.HotModuleReplacementPlugin(),
+		// new webpack.optimize.UglifyJsPlugin({
+  //           compressor: {
+  //               warnings: false,
+  //               sequences: true,
+  //               dead_code: true,
+  //               conditionals: true,
+  //               booleans: true,
+  //               unused: true,
+  //               if_return: true,
+  //               join_vars: true
+  //               ,drop_console: true
+  //           },
+  //           sourceMap: false,
+  //           mangle: false,
+  //           output: {
+  //               comments: false
+  //           }
+  //       }),
         new webpack.DefinePlugin({
             'process.env': {
                 'NODE_ENV': JSON.stringify('production')

@@ -49,51 +49,51 @@ export default class DetailLi extends Component {
 		let classNames = classnames({
 			'inline-block': true,
 			'label': true,
-			'label-primary': this.state.type == 1
+			'is-primary': this.state.type == 1
 		})
 		return <li className="detail-li" key={this.state.id}>
 		{this.state.update_status ?
 			<div>
-				<label className="form-radio inline-block" style={{width:'68px'}}>
+				<label className="form-radio inline-block">
 					<input type="radio" name={"type"+this.state.id} value="1" 
 						onChange={this.updateField.bind(this, null)} 
 						checked={this.state.type == 1 ? true : false} />
 					<i className="form-icon"></i> 收入
 				</label>
-				<label className="form-radio inline-block" style={{width:'68px'}}>
+				<label className="form-radio inline-block">
 					<input type="radio" name={"type"+this.state.id} value="2" 
 						onChange={this.updateField.bind(this, null)} 
 						checked={this.state.type == 2 ? true : false} />
 					<i className="form-icon"></i> 支出
 				</label>
 				<span style={{marginLeft:'10px',width:'100px'}} className="text-bold text-right inline-block">
-					<input className="form-input" name="amount" type="text" id="input-example-3" 
+					<input className="input" name="amount" type="text" id="input-example-3"
 						onChange={this.updateField.bind(this, null)}
 						value={this.state.amount} />
 				</span>
 				<span style={{marginLeft:'10px',width:'100px'}} className="inline-block">
-					<input className="form-input" name="description" type="text" id="input-example-4" 
+					<input className="input" name="description" type="text" id="input-example-4"
 						onChange={this.updateField.bind(this, null)}
 						value={this.state.description} />
 				</span>
-				<span style={{marginLeft:'10px'}} className="inline-block btn btn-sm"
+				<span style={{marginLeft:'10px'}} className="button"
 					onClick={this.updateField.bind(this, 'update')}>Cancel</span>
-				<span style={{marginLeft:'10px'}} className="inline-block btn btn-sm btn-submit"
+				<span style={{marginLeft:'10px'}} className="button is-primary"
 					onClick={this.updateField.bind(this, 'submit')}>Submit</span>
 			</div>
 		:
-			<div>
-				<span className={classNames}>{this.state.type == 1 ? '收入' : '支出'}</span>
+			<div className={classNames}>
+				<span>{this.state.type == 1 ? '收入' : '支出'}</span>
 				<span style={{marginLeft:'10px',width:'100px'}}
 					className="text-bold text-right inline-block">{Number(this.state.amount).toFixed(2)}</span>
 				<span style={{marginLeft:'10px',width:'200px'}}
 					className="inline-block">{this.state.description}</span>
 				<span style={{marginLeft:'10px'}}
-					className="inline-block btn btn-sm detail-update-btn"
-					onClick={this.updateField.bind(this, 'update')}>Update</span>
-				<span style={{marginLeft:'10px'}}
-					className="inline-block btn btn-sm detail-update-btn btn-delete"
+					className="button is-danger"
 					onClick={this.updateField.bind(this, 'delete')}>Delete</span>
+				<span style={{marginLeft:'10px'}}
+					className="button is-primary"
+					onClick={this.updateField.bind(this, 'update')}>Update</span>
 			</div>
 		}
 		</li>
