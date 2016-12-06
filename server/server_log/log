@@ -7259,3 +7259,242 @@
 2016-12-05 16:16:11 INFO  REQUEST: /api/metadata ; BODY:{} 
 2016-12-05 16:16:11 INFO  Called read 
 2016-12-05 16:16:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:44:38 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 16:44:38 INFO  Called read 
+2016-12-05 16:44:38 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 16:44:41 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 16:44:41 INFO  Called read 
+2016-12-05 16:44:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 17:27:12 INFO  REQUEST: /api/AddLog ; BODY:{"type":2,"amount":6.8,"description":"One cup of Monster","date_year":"2016","date":"12"} 
+2016-12-05 17:27:12 INFO  Called save 
+2016-12-05 17:27:12 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (2, 6.8, "One cup of Monster", "2016", "12") 
+2016-12-05 17:27:14 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 17:27:14 INFO  Called read 
+2016-12-05 17:27:14 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 17:27:16 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 17:27:16 INFO  Called read 
+2016-12-05 17:27:16 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 17:27:16 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 18:10:17 INFO  REQUEST: /api/AddLog ; BODY:{"type":2,"amount":5,"description":"信用卡扣款","date_year":"2016","date":"12"} 
+2016-12-05 18:10:17 INFO  Called save 
+2016-12-05 18:10:17 INFO  INSERT INTO accounting_log (type, amount, description, date_year, date) VALUES (2, 5, "信用卡扣款", "2016", "12") 
+2016-12-05 18:10:19 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 18:10:19 INFO  Called read 
+2016-12-05 18:10:19 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:08:46 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 22:08:46 INFO  Called read 
+2016-12-05 22:08:46 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 22:08:46 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 22:08:49 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 22:08:49 INFO  Called read 
+2016-12-05 22:08:49 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:08:51 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-05 22:08:51 INFO  Called read 
+2016-12-05 22:08:51 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:26:12 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 22:26:12 INFO  Called read 
+2016-12-05 22:26:12 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:26:15 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 22:26:15 INFO  Called read 
+2016-12-05 22:26:15 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:26:17 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 22:26:17 INFO  Called read 
+2016-12-05 22:26:17 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-05 22:26:19 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-05 22:26:19 INFO  Called read 
+2016-12-05 22:26:19 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-05 22:26:19 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-05 22:26:21 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-05 22:26:21 INFO  Called read 
+2016-12-05 22:26:21 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 13:46:41 INFO  REQUEST: /img/favicon.jpeg ; BODY:{} 
+2016-12-06 13:58:11 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 13:58:11 INFO  Called read 
+2016-12-06 13:58:11 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:27 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 14:54:27 INFO  Called read 
+2016-12-06 14:54:27 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:32 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 14:54:32 INFO  Called read 
+2016-12-06 14:54:32 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:35 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 14:54:35 INFO  Called read 
+2016-12-06 14:54:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:37 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 14:54:37 INFO  Called read 
+2016-12-06 14:54:37 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 14:54:37 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 14:54:46 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 14:54:46 INFO  Called read 
+2016-12-06 14:54:46 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:48 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 14:54:48 INFO  Called read 
+2016-12-06 14:54:48 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:52 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 14:54:52 INFO  Called read 
+2016-12-06 14:54:52 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:54:53 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 14:54:53 INFO  Called read 
+2016-12-06 14:54:53 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:59:30 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 14:59:30 INFO  Called read 
+2016-12-06 14:59:30 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 14:59:31 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 14:59:31 INFO  Called read 
+2016-12-06 14:59:31 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 14:59:31 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:07:56 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:07:56 INFO  Called read 
+2016-12-06 15:07:56 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:07:56 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:14:48 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:14:48 INFO  Called read 
+2016-12-06 15:14:48 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:14:48 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:24:00 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:24:00 INFO  Called read 
+2016-12-06 15:24:00 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:24:00 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:24:27 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:24:27 INFO  Called read 
+2016-12-06 15:24:27 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:24:27 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:24:27 INFO  REQUEST: /api/UpdateLog ; BODY:{"id":582,"amount":6,"type":2,"description":"信用卡服务费"} 
+2016-12-06 15:24:27 INFO  Called save 
+2016-12-06 15:24:27 INFO  {"amount":6,"type":2,"description":"\"信用卡服务费\""} 
+2016-12-06 15:24:27 INFO  UPDATE accounting_log SET amount=6, type=2, description="信用卡服务费" WHERE id=582 
+2016-12-06 15:24:27 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:24:27 INFO  Called read 
+2016-12-06 15:24:27 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:24:27 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:25:35 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:25:35 INFO  Called read 
+2016-12-06 15:25:35 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:25:38 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 15:25:38 INFO  Called read 
+2016-12-06 15:25:38 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:25:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:25:43 INFO  Called read 
+2016-12-06 15:25:43 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:25:45 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:25:45 INFO  Called read 
+2016-12-06 15:25:45 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:25:47 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:25:47 INFO  Called read 
+2016-12-06 15:25:47 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:25:49 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:25:49 INFO  Called read 
+2016-12-06 15:25:49 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:25:49 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:31:09 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 15:31:09 INFO  Called read 
+2016-12-06 15:31:09 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 15:31:09 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 15:45:24 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:45:24 INFO  Called read 
+2016-12-06 15:45:24 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:45:25 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 15:45:25 INFO  Called read 
+2016-12-06 15:45:25 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:45:27 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:45:27 INFO  Called read 
+2016-12-06 15:45:27 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:54:06 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 15:54:06 INFO  Called read 
+2016-12-06 15:54:06 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 15:54:15 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 15:54:15 INFO  Called read 
+2016-12-06 15:54:15 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:00:33 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 16:00:33 INFO  Called read 
+2016-12-06 16:00:33 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:09:04 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 16:09:04 INFO  Called read 
+2016-12-06 16:09:04 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:09:07 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:09:07 INFO  Called read 
+2016-12-06 16:09:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:09:13 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:09:13 INFO  Called read 
+2016-12-06 16:09:13 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:56:41 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:56:41 INFO  Called read 
+2016-12-06 16:56:41 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:56:44 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:56:44 INFO  Called read 
+2016-12-06 16:56:44 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:56:46 INFO  REQUEST: /api/metadata/2016-12 ; BODY:{} 
+2016-12-06 16:56:46 INFO  Called read 
+2016-12-06 16:56:46 INFO  {"date_year":"\"2016\"","date":"\"12\""} 
+2016-12-06 16:56:46 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="12" 
+2016-12-06 16:56:50 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:56:50 INFO  Called read 
+2016-12-06 16:56:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:56:51 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 16:56:51 INFO  Called read 
+2016-12-06 16:56:51 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:57:07 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:57:07 INFO  Called read 
+2016-12-06 16:57:07 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:57:11 INFO  REQUEST: /api/metadata/2016-1 ; BODY:{} 
+2016-12-06 16:57:11 INFO  Called read 
+2016-12-06 16:57:11 INFO  {"date_year":"\"2016\"","date":"\"1\""} 
+2016-12-06 16:57:11 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="1" 
+2016-12-06 16:57:21 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:57:21 INFO  Called read 
+2016-12-06 16:57:21 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:57:23 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-06 16:57:23 INFO  Called read 
+2016-12-06 16:57:23 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-06 16:57:23 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-06 16:57:27 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:57:27 INFO  Called read 
+2016-12-06 16:57:27 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:57:28 INFO  REQUEST: /api/metadata/2016-10 ; BODY:{} 
+2016-12-06 16:57:28 INFO  Called read 
+2016-12-06 16:57:28 INFO  {"date_year":"\"2016\"","date":"\"10\""} 
+2016-12-06 16:57:28 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="10" 
+2016-12-06 16:57:31 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:57:31 INFO  Called read 
+2016-12-06 16:57:31 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:57:34 INFO  REQUEST: /api/metadata/2016-9 ; BODY:{} 
+2016-12-06 16:57:34 INFO  Called read 
+2016-12-06 16:57:34 INFO  {"date_year":"\"2016\"","date":"\"9\""} 
+2016-12-06 16:57:34 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="9" 
+2016-12-06 16:58:08 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:58:08 INFO  Called read 
+2016-12-06 16:58:08 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:58:11 INFO  REQUEST: /api/metadata/2016-5 ; BODY:{} 
+2016-12-06 16:58:11 INFO  Called read 
+2016-12-06 16:58:11 INFO  {"date_year":"\"2016\"","date":"\"5\""} 
+2016-12-06 16:58:11 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="5" 
+2016-12-06 16:58:43 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:58:43 INFO  Called read 
+2016-12-06 16:58:43 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:58:47 INFO  REQUEST: /api/metadata/2016-4 ; BODY:{} 
+2016-12-06 16:58:47 INFO  Called read 
+2016-12-06 16:58:47 INFO  {"date_year":"\"2016\"","date":"\"4\""} 
+2016-12-06 16:58:47 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="4" 
+2016-12-06 16:58:50 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:58:50 INFO  Called read 
+2016-12-06 16:58:50 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:58:52 INFO  REQUEST: /api/metadata/2016-2 ; BODY:{} 
+2016-12-06 16:58:52 INFO  Called read 
+2016-12-06 16:58:52 INFO  {"date_year":"\"2016\"","date":"\"2\""} 
+2016-12-06 16:58:52 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="2" 
+2016-12-06 16:58:54 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:58:54 INFO  Called read 
+2016-12-06 16:58:54 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 16:58:57 INFO  REQUEST: /api/metadata/2016-11 ; BODY:{} 
+2016-12-06 16:58:57 INFO  Called read 
+2016-12-06 16:58:57 INFO  {"date_year":"\"2016\"","date":"\"11\""} 
+2016-12-06 16:58:57 INFO  SELECT * FROM accounting_log WHERE date_year="2016" AND date="11" 
+2016-12-06 16:59:26 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 16:59:26 INFO  Called read 
+2016-12-06 16:59:26 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 17:00:16 INFO  REQUEST: /api/metadata ; BODY:{} 
+2016-12-06 17:00:16 INFO  Called read 
+2016-12-06 17:00:16 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 
+2016-12-06 17:00:19 INFO  REQUEST: /api/dashboard ; BODY:{} 
+2016-12-06 17:00:19 INFO  Called read 
+2016-12-06 17:00:19 INFO  SELECT * FROM accounting_log ORDER BY date_year asc, date asc, type asc 

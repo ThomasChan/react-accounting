@@ -7,17 +7,16 @@ import { Menu, Icon } from 'antd'
 class Header extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      current: 'dashboard'
+    let current
+    try {
+      current = props.children.props.route.path
+    } catch (Exception) {
+      current = 'dashboard'
     }
-  }
-
-  componentDidMount() {
-    console.log(this.props)
+    this.state = {current}
   }
 
   changeRoute(e) {
-    console.log(e.key)
     this.setState({
       current: e.key
     })
@@ -25,7 +24,8 @@ class Header extends Component {
 
   render() {
     return <div className="ant-layout-header">
-      <Menu onClick={(e) => this.changeRoute(e)}
+      <Menu
+        onClick={(e) => this.changeRoute(e)}
         selectedKeys={[this.state.current]}
         mode="horizontal"
       >

@@ -1,20 +1,62 @@
 
 import Request from 'superagent'
+import { message } from 'antd'
 
-export const getData = async (url, callback) => {
-  let res = await Request.get(url)
-  if (res.status === 200) {
-    callback({
-      isLoading: false,
-      ...res.body
-    })
+class Api {
+
+  constructor() {}
+
+  get(url, callback) {
+    (async () => {
+      let res = await Request.get(url)
+      if (res.status === 200) {
+        callback({
+          loading: false,
+          ...res.body
+        })
+      }
+    })()
+    return this
   }
+
+  post(url, payload, callback) {
+    (async () => {
+      callback({ loading: true })
+      let res = await Request.post(url).send(payload)
+      if (res.status === 200) {
+        callback({ loading: false })
+      }
+    })()
+    return this
+  }
+
 }
 
-export const sendData = async (url, payload, callback) => {
-  callback({ isLoading: true })
-  let res = await Request.post(url).send(payload)
-  if (res.status === 200) {
-    callback({ isLoading: false })
+// const api = new Proxy(new Api(), {
+//   get: function(target, propKey, receiver) {
+//     try {
+//       console.log(target, propKey, ...args)
+//       return Reflect.get(target, propKey).apply(...args)
+//     } catch (Exception) {
+//       message.error(Exception)
+//     }
+//   }
+// })
+// window.a = api
+
+function numberToMoney(num, isFloat) {
+  const money = Number(num)
+  if (money > 0) {
+    var _num = money.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, '$1,')
+    if (!isFloat) {
+      return _num.split('.')[0]
+    }
+    return _num
   }
+  if (isFloat) {
+      return '0.00'
+  }
+  return '0'
 }
+
+export {Api, numberToMoney}

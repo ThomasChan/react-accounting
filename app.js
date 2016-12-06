@@ -28,18 +28,13 @@ app.use(routerLogger)
 // }));
 // app.use(require('webpack-hot-middleware')(compiler));
 
-
-
 app.get('/api/dashboard', routes.Dashboard)
 app.get('/api/metadata', routes.MetaData)
 app.get('/api/metadata/:month', routes.Month)
-
-
-
-app.post('/api/Login', routes.Login)
-app.get('/api/GetHomeData', routes.GetHomeData)
+// app.post('/api/Login', routes.Login)
+// app.get('/api/GetHomeData', routes.GetHomeData)
 app.post('/api/AddLog', routes.AddLog)
-app.post('/api/AddLogSpec', routes.AddLogSpec)
+// app.post('/api/AddLogSpec', routes.AddLogSpec)
 app.post('/api/UpdateLog', routes.UpdateLog)
 app.post('/api/DeleteLog', routes.DeleteLog)
 
