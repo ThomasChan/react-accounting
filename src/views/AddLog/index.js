@@ -52,14 +52,20 @@ const AddLog = Form.create()(class AddLogClass extends Component {
   handleSubmit(e) {
     e.preventDefault();
     this.setState({ submiting: true })
-    let postData = {
+    let {
       type,
       amount,
       description,
       date_year,
       date,
     } = this.state
-    this.api.post(`/api/AddLog`, postData, (res) => {
+    this.api.post(`/api/AddLog`, {
+      type,
+      amount,
+      description,
+      date_year,
+      date,
+    }, (res) => {
       message.success('添加成功！')
       this.setState({ submiting: false })
       this.props.form.resetFields()

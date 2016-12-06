@@ -13,7 +13,6 @@ exports.db = {
 	"pwd": "",
 	"db": "money",
 	"table":  {
-		"Log": "accounting_log",
-		"LogSpec": "accounting_log_for_wife"
+		"Log": "accounting_log"
 	}
 }

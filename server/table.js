@@ -22,30 +22,13 @@ var Log = {
 	description: {
 		type: 'string',
 		default: '...'
-	}
-}
-
-var LogSpec = {
-	id: {
-		type: 'number',
-		default: null
 	},
-	date: {
-		type: 'number',
-		default: new Date().getFullYear() + '-' + (1 + new Date().getMonth()) + '-' + new Date().getDate()
-	},
-	amount: {
+	wages: {
 		type: 'number',
 		default: 0
-	},
-	description: {
-		type: 'string',
-		default: '...'
 	}
 }
 
-
 module.exports = {
-	Log: Log,
-	LogSpec: LogSpec
+	Log: Log
 }

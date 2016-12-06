@@ -14,6 +14,7 @@ class Dashboard extends Component {
     this.state = {
       loading: true,
       height: chartsHeight,
+      wages: [],
       shouru: [],
       zhichu: [],
       month: [],
@@ -41,6 +42,7 @@ class Dashboard extends Component {
       },
       legend: {
         data: [
+          '月标工资',
           '收入',
           '支出',
         ]
@@ -81,16 +83,22 @@ class Dashboard extends Component {
 
     return <Chart {...options}>
       <Chart.Line
+        name="月标工资"
+        data={this.state.wages}
+        showAllSymbol={true}
+        // smooth={true}
+      />
+      <Chart.Line
         name="收入"
         data={this.state.shouru}
         showAllSymbol={true}
-        smooth={true}
+        // smooth={true}
       />
       <Chart.Line
         name="支出"
         data={this.state.zhichu}
         showAllSymbol={true}
-        smooth={true}
+        // smooth={true}
       />
     </Chart>
   }

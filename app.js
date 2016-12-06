@@ -39,6 +39,6 @@ app.post('/api/UpdateLog', routes.UpdateLog)
 app.post('/api/DeleteLog', routes.DeleteLog)
 
 
-app.listen(8081, 'react.accounting.com', function() {
-	console.log('listening at react.accounting.com:8081')
+app.listen(8081, function() {
+	console.log('listening at http://localhost:8081')
 })

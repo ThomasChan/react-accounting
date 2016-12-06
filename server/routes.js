@@ -10,12 +10,15 @@ exports.Login = function(req, res) {
 exports.Dashboard = function(req, res) {
 	try {
 		new model('Log').read('*', [], [], ['date_year asc', 'date asc', 'type asc'], function(resLog) {
-			var shouru = [], zhichu = [], month = [], tmpData = {}
+			var wages = [], shouru = [], zhichu = [], month = [], tmpData = {}
 			if (resLog.length) {
 				resLog.forEach((row, index) => {
 					if (row) {
 						var _month = row.date_year + '-' + row.date
 						tmpData[_month] = tmpData[_month] || {}
+						if (!tmpData[_month].wages) {
+							tmpData[_month].wages = Number(row.wages) || 0
+						}
 						if (row.type == 1) {
 							tmpData[_month].shouru = (tmpData[_month].shouru || 0) + Number(row.amount)
 						}
@@ -32,11 +35,13 @@ exports.Dashboard = function(req, res) {
 						tmpData[key].zhichu = 0
 					}
 					month.push(key)
+					wages.push(Number(tmpData[key].wages.toFixed(2)))
 					shouru.push(Number(tmpData[key].shouru.toFixed(2)))
 					zhichu.push(Number(tmpData[key].zhichu.toFixed(2)))
 				})
 			}
 			res.status(200).json({
+				wages: wages,
 				shouru: shouru,
 				zhichu: zhichu,
 				month: month

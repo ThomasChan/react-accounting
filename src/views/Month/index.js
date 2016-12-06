@@ -204,14 +204,13 @@ const MonthForm = Form.create()(
     console.log(props)
     let { id, type, amount, description } = props.row
     const { getFieldDecorator } = props.form
-    return <Form horizontal>
+    return <Form vertical>
       <FormItem>
         {getFieldDecorator('type', {
+          initialValue: Number(type),
           rules: [{ required: true, message: 'Please select type!' }],
         })(
-          <RadioGroup
-            defaultValue={Number(type)}
-          >
+          <RadioGroup>
             <Radio value={1}>收入</Radio>
             <Radio value={2}>支出</Radio>
           </RadioGroup>
@@ -219,22 +218,18 @@ const MonthForm = Form.create()(
       </FormItem>
       <FormItem>
         {getFieldDecorator('amount', {
+          initialValue: Number(amount),
           rules: [{ required: true, message: 'Please input amount!' }],
         })(
-          <InputNumber
-            min={1}
-            defaultValue={Number(amount)}
-          />
+          <InputNumber min={1} />
         )}
       </FormItem>
       <FormItem>
         {getFieldDecorator('description', {
+          initialValue: description,
           rules: [{ required: true, message: 'Please input description!' }],
         })(
-          <Input
-            type="text"
-            defaultValue={description}
-          />
+          <Input type="text" />
         )}
       </FormItem>
     </Form>
