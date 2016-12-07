@@ -2,38 +2,68 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Chart from 'rc-echarts'
-import { Spin, Col } from 'antd'
-import { Api } from '../../utils'
+import { Spin, Col, Alert } from 'antd'
+import { loadInitData, PENDING, SUCCESS } from '../../actions'
 
-// TODO: calclator chart height, make it full fill page
-const chartsHeight = 0
+// Actions Type
+const DASHBOARD_INITIAL = 'DASHBOARD_INITIAL'
+// Reducer
+const DashboardProps = (state = {
+  loading: false,
+  height: 0,
+  wages: [],
+  shouru: [],
+  zhichu: [],
+  month: [],
+}, action) => {
+  switch (action.type) {
+    case DASHBOARD_INITIAL:
+      switch (action.payload.status) {
+        case PENDING:
+          return {
+            ...state,
+            loading: true,
+          }
+        case SUCCESS:
+          return {
+            ...state,
+            ...action.payload.nextState,
+            loading: false,
+            height: window.innerHeight - 135,
+          }
+      }
+    default:
+      return state
+  }
+}
+// View UI
+const DashboardView = ({
+  DashboardProps: {
+    loading,
+    height,
+    month,
+    wages,
+    shouru,
+    zhichu,
+  },
+  dispatch,
+}) => {
+  if (!month.length && !loading) {
+    dispatch(loadInitData('/api/dashboard', DASHBOARD_INITIAL, dispatch))
+  }
 
-class Dashboard extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      loading: true,
-      height: chartsHeight,
-      wages: [],
-      shouru: [],
-      zhichu: [],
-      month: [],
+  const renderChart = () => {
+    if (!month.length) {
+      return <Alert
+        message="No Data"
+        description="No data has been found."
+        type="info"
+        showIcon
+      />
     }
-    this.api = new Api()
-  }
 
-  componentDidMount() {
-    this.api.get('/api/dashboard', (nextState) => {
-      this.setState({
-        ...nextState,
-        height: window.innerHeight - 135
-      })
-    })
-  }
-
-  renderChart() {
     const options = {
-      height : this.state.height,
+      height : height,
       title : {
         text: '收支趋势'
       },
@@ -70,7 +100,7 @@ class Dashboard extends Component {
       xAxis : [
         {
           type : 'category',
-          data: this.state.month,
+          data: month,
           boundaryGap: ['5%', '5%']
         },
       ],
@@ -84,51 +114,43 @@ class Dashboard extends Component {
     return <Chart {...options}>
       <Chart.Line
         name="月标工资"
-        data={this.state.wages}
+        data={wages}
         showAllSymbol={true}
         // smooth={true}
       />
       <Chart.Line
         name="收入"
-        data={this.state.shouru}
+        data={shouru}
         showAllSymbol={true}
         // smooth={true}
       />
       <Chart.Line
         name="支出"
-        data={this.state.zhichu}
+        data={zhichu}
         showAllSymbol={true}
         // smooth={true}
       />
     </Chart>
   }
 
-  render() {
-    return <Col span={22}>
-      <Spin
-        tip="加载中..."
-        spinning={this.state.loading}
-      >
-        <h2>
-          Dashboard
-        </h2>
-        {!this.state.loading && this.renderChart()}
-      </Spin>
-    </Col>
-  }
-
+  return <Col span={22}>
+    <Spin
+      tip="加载中..."
+      spinning={loading}
+    >
+      <h2>
+        Dashboard
+      </h2>
+      {renderChart()}
+    </Spin>
+  </Col>
 }
+// Component export
+const Dashboard = connect(
+  DashboardProps
+)(DashboardView)
 
-const DashboardReducer = (state = {
-  loading: true,
-  shouru: [],
-  zhichu: [],
-  month: [],
-}, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
+export {
+  Dashboard,
+  DashboardProps,
 }
-
-export {Dashboard, DashboardReducer}

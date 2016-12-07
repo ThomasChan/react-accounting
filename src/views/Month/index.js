@@ -18,39 +18,102 @@ import {
   Icon,
   Popconfirm,
 } from 'antd'
-import { Api, numberToMoney } from '../../utils'
-
+import { loadInitData, patchData, PENDING, SUCCESS } from '../../actions'
+import { numberToMoney } from '../../utils'
+// Antd Component
 const RadioGroup = Radio.Group
 const FormItem = Form.Item
+// Actions
+const MONTH_INITIAL = 'MONTH_INITIAL'
+const MONTH_DELETE = 'MONTH_DELETE'
+const MONTH_UPDATE = 'MONTH_UPDATE'
+// Reducer
+const MonthProps = (state = {
+  loading: false,
+  confirmLoading: false,
+  totalShouru: 0,
+  totalZhichu: 0,
+  details: [],
+}, action) => {
+  switch (action.type) {
+    case MONTH_INITIAL:
+      switch (action.payload.status) {
+        case PENDING:
+          return {
+            ...state,
+            loading: true,
+          }
+        case SUCCESS:
+          return {
+            ...state,
+            ...action.payload.nextState,
+            loading: false,
+            refresh: false,
+          }
+      }
+    case MONTH_DELETE:
+      switch (action.payload.status) {
+        case PENDING:
+          return {
+            ...state,
+            loading: true,
+          }
+        case SUCCESS:
+          return {
+            ...state,
+            ...action.payload.nextState,
+            loading: false,
+            refresh: true,
+          }
+      }
+    case MONTH_UPDATE:
+      switch (action.payload.status) {
+        case PENDING:
+          return {
+            ...state,
+            confirmLoading: true,
+          }
+        case SUCCESS:
+          return {
+            ...state,
+            ...action.payload.nextState,
+            refresh: true,
+            confirmLoading: false,
+          }
+      }
+    default:
+      return state
+  }
+}
+// Views UI
+class MonthView extends Component {
 
-class Month extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading: true,
-      totalShouru: 0,
-      totalZhichu: 0,
-      details: [],
       visible: false,
       currentRow: {},
-      confirmLoading: false,
     }
-    this.api = new Api()
   }
 
   componentDidMount() {
     this.refreshMonthDetailTable()
   }
 
-  refreshMonthDetailTable() {
-    const { month } = this.props.params
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.refresh) {
+      this.refreshMonthDetailTable()
+    }
+  }
 
-    this.api.get(`/api/metadata/${month}`, (res) => {
-      this.setState({
-        ...res,
-        loading: false,
-      })
-    })
+  refreshMonthDetailTable() {
+    const {
+      dispatch,
+      params: {
+        month,
+      },
+    } = this.props
+    loadInitData(`/api/metadata/${month}`, MONTH_INITIAL, dispatch)
   }
 
   openEdit(e, row, index) {
@@ -61,22 +124,24 @@ class Month extends Component {
   }
 
   deleteRow(e, row, index) {
-    this.api.post(`/api/DeleteLog`, {
+    const { dispatch } = this.props
+    patchData(`/api/DeleteLog`, {
       id: row.id
-    }, (res) => {
-      this.setState({...res})
-      this.refreshMonthDetailTable()
-    })
+    }, MONTH_DELETE, dispatch)
   }
 
   render() {
-    const { month } = this.props.params
-    
     let {
-      totalShouru,
-      totalZhichu,
-      details,
-    } = this.state
+      params: {
+        month,
+      },
+      MonthProps: {
+        totalShouru,
+        totalZhichu,
+        details,
+        loading,
+      }
+    } = this.props
 
     if (details && details.length) {
       details = details.map(row => {
@@ -128,7 +193,7 @@ class Month extends Component {
 
     return <Spin
         tip="加载中..."
-        spinning={this.state.loading}
+        spinning={loading}
       >
       <h2>
         <Button
@@ -158,20 +223,13 @@ class Month extends Component {
   }
 
   handleOk(e) {
-    this.setState({ confirmLoading: true })
-    this.api.post(`/api/UpdateLog`, {
+    const { dispatch } = this.props
+    patchData(`/api/UpdateLog`, {
       id: this.updateModal.props.row.id,
       amount: this.updateModal.fields.amount.value,
       type: this.updateModal.fields.type.value,
       description: this.updateModal.fields.description.value,
-    }, (res) => {
-      this.setState({
-        ...res,
-        confirmLoading: false,
-      })
-      this.updateModal.resetFields()
-      this.refreshMonthDetailTable()
-    })
+    }, MONTH_UPDATE, dispatch)
   }
 
   handleCancel(e) {
@@ -181,68 +239,64 @@ class Month extends Component {
   }
 
   renderUpdateModal() {
+    let { visible, confirmLoading, currentRow } = this.state
     return <Modal
       title="Update Field"
-      visible={this.state.visible}
+      visible={visible}
       onOk={(e) => this.handleOk(e)}
       onCancel={(e) => this.handleCancel(e)}
       okText="Submit"
       cancelText="Cancel"
-      confirmLoading={this.state.confirmLoading}
+      confirmLoading={confirmLoading}
     >
       <MonthForm
         ref={ref => this.updateModal = ref}
-        row={this.state.currentRow}
+        row={currentRow}
       />
     </Modal>
   }
 
 }
+// Views Component UI
+const MonthForm = Form.create()((props) => {
+  let { id, type, amount, description } = props.row
+  const { getFieldDecorator } = props.form
+  return <Form vertical>
+    <FormItem>
+      {getFieldDecorator('type', {
+        initialValue: Number(type),
+        rules: [{ required: true, message: 'Please select type!' }],
+      })(
+        <RadioGroup>
+          <Radio value={1}>收入</Radio>
+          <Radio value={2}>支出</Radio>
+        </RadioGroup>
+      )}
+    </FormItem>
+    <FormItem>
+      {getFieldDecorator('amount', {
+        initialValue: Number(amount),
+        rules: [{ required: true, message: 'Please input amount!' }],
+      })(
+        <InputNumber min={1} />
+      )}
+    </FormItem>
+    <FormItem>
+      {getFieldDecorator('description', {
+        initialValue: description,
+        rules: [{ required: true, message: 'Please input description!' }],
+      })(
+        <Input type="text" />
+      )}
+    </FormItem>
+  </Form>
+})
+// Component export
+const Month = connect(
+  MonthProps
+)(MonthView)
 
-const MonthForm = Form.create()(
-  (props) => {
-    console.log(props)
-    let { id, type, amount, description } = props.row
-    const { getFieldDecorator } = props.form
-    return <Form vertical>
-      <FormItem>
-        {getFieldDecorator('type', {
-          initialValue: Number(type),
-          rules: [{ required: true, message: 'Please select type!' }],
-        })(
-          <RadioGroup>
-            <Radio value={1}>收入</Radio>
-            <Radio value={2}>支出</Radio>
-          </RadioGroup>
-        )}
-      </FormItem>
-      <FormItem>
-        {getFieldDecorator('amount', {
-          initialValue: Number(amount),
-          rules: [{ required: true, message: 'Please input amount!' }],
-        })(
-          <InputNumber min={1} />
-        )}
-      </FormItem>
-      <FormItem>
-        {getFieldDecorator('description', {
-          initialValue: description,
-          rules: [{ required: true, message: 'Please input description!' }],
-        })(
-          <Input type="text" />
-        )}
-      </FormItem>
-    </Form>
-  }
-)
-
-const MonthReducer = (state = {
-  loading: true,
-}, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
+export {
+  Month,
+  MonthProps,
 }
-
-export {Month, MonthReducer}

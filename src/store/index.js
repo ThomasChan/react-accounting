@@ -1,9 +1,19 @@
 
-import { createStore, applyMiddleware, combineReducers, compose } from 'redux'
+import {
+  createStore,
+  combineReducers,
+} from 'redux'
+import { DashboardProps } from '../views/Dashboard'
+import { MetadataProps } from '../views/Metadata'
+import { MonthProps } from '../views/Month'
 
-const reducer = (state = {}, action) => state
-
-const Store = createStore(reducer, {},
+const initialState = {}
+const reducer = combineReducers({
+  DashboardProps,
+  MetadataProps,
+  MonthProps,
+})
+const Store = createStore(reducer, initialState,
   window.devToolsExtension && window.devToolsExtension()
 )
 

@@ -7,27 +7,19 @@ class Api {
   constructor() {}
 
   get(url, callback) {
-    (async () => {
+    return (async () => {
       let res = await Request.get(url)
-      if (res.status === 200) {
-        callback({
-          loading: false,
-          ...res.body
-        })
-      }
+      callback({
+        ...res.body
+      })
     })()
-    return this
   }
 
   post(url, payload, callback) {
-    (async () => {
-      callback({ loading: true })
+    return (async () => {
       let res = await Request.post(url).send(payload)
-      if (res.status === 200) {
-        callback({ loading: false })
-      }
+      callback()
     })()
-    return this
   }
 
 }

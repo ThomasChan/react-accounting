@@ -2,7 +2,8 @@ var path = require('path');
 var webpack = require('webpack')
 
 module.exports = {
-	devtool: 'inline-eval-cheap-source-map',
+	cache: true,
+	devtool: 'eval',
 	entry: [
     	// 'webpack-hot-middleware/client',
 		'babel-polyfill',
@@ -11,7 +12,8 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'bundle.js',
-		publicPath: '/dist'
+		publicPath: '/dist',
+		pathinfo: true
 	},
 	module: {
 		loaders: [
@@ -51,7 +53,7 @@ module.exports = {
                 unused: true,
                 if_return: true,
                 join_vars: true
-                ,drop_console: true
+                // ,drop_console: true
             },
             sourceMap: false,
             mangle: false,
